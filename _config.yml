@@ -23,7 +23,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "Profile.PNG"
   name             : "姚行健(JamesYao)"
   pronouns         : # example: "she/her"  
   bio              : "I am a student in PKU EECS department, major in computer science."
