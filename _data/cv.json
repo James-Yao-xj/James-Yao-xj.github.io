@@ -1,143 +1,94 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "姚行健(JamesYao)",
+    "email": "xingjian.yao@outlook.com",
+    "phone": "19827497049",
+    "website": "https://james-yao-xj.github.io",
+    "summary": "Currently a student in PKU, EECS department",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
+      "address": "Peking University, Yiheyuan Road #5",
+      "postalCode": "100871",
+      "city": "Peking",
+      "countryCode": "China",
       "region": ""
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "network": "N/A",
+        "username": "N/A",
+        "url": "N/A"
       },
       {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "network": "N/A",
+        "username": "N/A",
+        "url": "N/A"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "James-Yao-xj",
+        "url": "https://james-yao-xj.github.io/"
       }
     ]
   },
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "Peking University",
+      "area": "Bachelor's degree in computer science",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "startDate": "20250901",
+      "endDate": "202906",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
+      "institution": "Chengdu No.7 High School",
+      "area": "Science",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
+      "startDate": "20220901",
+      "endDate": "202506",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
+      "institution": "Chengdu Shishi Union Middle School",
+      "area": "Zhongkao",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "startDate": "20190901",
+      "endDate": "202206",
       "gpa": null,
       "courses": []
     }
   ],
   "skills": [],
-  "languages": [],
+  "languages": [Chinese and English],
   "interests": [],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
+      "name": "情系母校",
       "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "releaseDate": "2026",
+      "website": "",
+      "summary": "This paper documented some of my high school memories, together with some of my learning strategies"
     }
   ],
   "presentations": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
+      "name": "How to enjoy your high school life",
+      "event": "Chengdu No.7 High School Summer Camp, 2025",
+      "date": "2025-06",
+      "location": "Chengdu, Sichaun, China",
+      "description": "This is my first public speech."
     }
   ],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
+      "course": "N/A",
+      "institution": "N/A",
+      "date": "N/A",
+      "role": "N/A",
+      "description": "N/A"
     }
   ],
   "portfolio": [
