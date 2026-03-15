@@ -18,5 +18,5 @@ I have many hobbies, including playing badminton, tennis, swimming. I also love 
 I am also a fan of aviation. In my spare time, I always go near the airports and take photos of those giant iron birds. It used to be my dream to be a pilot. I really enjoy the feeling of flying around and without any limitations(but actually pilots have to follow certain rules, I was so naive when I was a young child).
 
 I will make this page more beautiful in the future. To greet you, I would like to post my photo here, thank you for visiting my website!
-！[This is James!](/images/HomePage.png)
+![This is James!](/images/HomePage.png)
 
