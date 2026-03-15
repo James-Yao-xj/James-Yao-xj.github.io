@@ -60,9 +60,24 @@
       "courses": []
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
+  "skills": [
+    {
+      "Sport":"Badminton, Marathon, Tennis, Volleyball.",
+      "Code":"Learning cpp, python right now."
+    }
+  ],
+  "languages": [
+    {
+      "MotherTone":"Chinese",
+      "Others":"English, currently learning French and Arabic."
+    }
+  ],
+  "interests": [
+    {
+      "Major":"AI development",
+      "Hobbies":"Aviation"
+    }
+  ],
   "references": [],
   "publications": [
     {
