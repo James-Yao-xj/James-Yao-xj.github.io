@@ -36,8 +36,8 @@
       "institution": "Peking University",
       "area": "Bachelor's degree in computer science",
       "studyType": "",
-      "startDate": "20250901",
-      "endDate": "202906",
+      "startDate": "2025-09-01",
+      "endDate": "2029-06-01",
       "gpa": null,
       "courses": []
     },
@@ -45,8 +45,8 @@
       "institution": "Chengdu No.7 High School",
       "area": "Science",
       "studyType": "",
-      "startDate": "20220901",
-      "endDate": "202506",
+      "startDate": "2022-09-01",
+      "endDate": "2025-06-01",
       "gpa": null,
       "courses": []
     },
@@ -54,8 +54,8 @@
       "institution": "Chengdu Shishi Union Middle School",
       "area": "Zhongkao",
       "studyType": "",
-      "startDate": "20190901",
-      "endDate": "202206",
+      "startDate": "2019-09-01",
+      "endDate": "2022-06-01",
       "gpa": null,
       "courses": []
     }
@@ -68,7 +68,7 @@
     {
       "name": "情系母校",
       "publisher": "Journal 1",
-      "releaseDate": "2026",
+      "releaseDate": "2026-11-01",
       "website": "",
       "summary": "This paper documented some of my high school memories, together with some of my learning strategies"
     }
@@ -77,7 +77,7 @@
     {
       "name": "How to enjoy your high school life",
       "event": "Chengdu No.7 High School Summer Camp, 2025",
-      "date": "2025-06",
+      "date": "2025-06-01",
       "location": "Chengdu, Sichaun, China",
       "description": "This is my first public speech."
     }
