@@ -9,56 +9,49 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+# 姚行健 (JamesYao)
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+- Email: xingjian.yao@outlook.com
+- Phone: 19827497049
+- Website: https://james-yao-xj.github.io
+- Location: Peking University, Yiheyuan Road #5, Peking, China (100871)
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## Summary
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+Currently a student in PKU, EECS department
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+## Education
+
+- **Peking University** — Bachelor's degree in computer science  
+  *2025-09-01 → 2029-06-01*
+- **Chengdu No.7 High School** — Science  
+  *2022-09-01 → 2025-06-01*
+- **Chengdu Shishi Union Middle School** — Zhongkao  
+  *2019-09-01 → 2022-06-01*
+
+## Publications
+
+- **情系母校** — Journal 1 (*2026-11-01*)  
+  This paper documented some of my high school memories, together with some of my learning strategies
+
+## Presentations
+
+- **How to enjoy your high school life** — Chengdu No.7 High School Summer Camp, 2025  
+  *2025-06-01*, Chengdu, Sichaun, China  
+  This is my first public speech.
+
+## Work
+
+暂无。
+
+## Skills
+
+暂无。
+
+## Teaching
+
+- N/A — N/A (N/A)
+
+## Portfolio
+
+- Portfolio item number 1 — Short description of portfolio item number 1
