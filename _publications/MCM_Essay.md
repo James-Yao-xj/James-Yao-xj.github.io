@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/MCM_Essay
 excerpt: 'This is an essay about the possibility of moving 100,000 people from the Earth to the Moon.'
-date: 2026-02
+date: 2026-02-02
 venue: 'MCM_Competition_2026'
 slidesurl: 'https://james-yao-xj.github.io/files/MCM_Final_Essay.pdf'
 paperurl: ''
