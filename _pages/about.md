@@ -7,16 +7,17 @@ redirect_from:
   - /about.html
 ---
 
-Hello everyone! Welcome to my homepage. You may have never heard about my name, as I am still a CS student in college. My name is 姚行健, you can also call me James. I was born in 2007, and my hometown is Chengdu, Sichuan Province, China. In this website, you will know me and my projects. I will also update some of the latest news about my project on this website(though this may be a few years later).
+Hello everyone, and welcome to my personal little corner of the web! You might not have heard of me before—and that’s okay—because I’m still a college student exploring the world of computer science. My name is 姚行健, and you can also call me James. I was born in 2007, and I’m from Chengdu, Sichuan Province, China. On this website, you’ll get to know me and the projects I’m working on. I also plan to share updates on my projects here—though that might be a few years down the road.
 
-This is a self-introduction~ Nice to meet you~
+So, here’s a little about me—nice to meet you!
 ======
-I have just graduated from high school in 2025, and I still have a lot to learn in college. I am a fresh man in Computer Science, and will always be humble to learn new things. I will be very happy if you can email me, and I will reply as soon as possible. You can also vist my [github](https://github.com/James-Yao-xj)to take a look at my projects. Untill now, most repos are about my notes taken in class, but I believe in the future, more and more interesting projects will be launched.
 
-I have many hobbies, including playing badminton, tennis, swimming. I also love learning  some social science. I love reading philosophical works and my favourite thinker is Friedrich Wilhelm Nietzsche. I can speak Chinese and English, and I am currently studying French and Arabic. I really wish ti make friends with people all around the world, and I believe that computer science is a bridge to bring all the people together.
+I just graduated from high school in 2025, and I know there’s so much more to learn in college. I’m a freshman in Computer Science, and I’ll always stay humble and eager to learn new things. I’d be really happy if you emailed me—I’ll reply as soon as I can. You can also check out my [github](https://github.com/James-Yao-xj) to see my projects. So far, most of my repos are just class notes, but I believe that over time, I’ll launch more and more interesting projects.
 
-I am also a fan of aviation. In my spare time, I always go near the airports and take photos of those giant iron birds. It used to be my dream to be a pilot. I really enjoy the feeling of flying around and without any limitations(but actually pilots have to follow certain rules, I was so naive when I was a young child).
+I have a wide range of hobbies, including playing badminton, tennis, and swimming. I also enjoy learning about the social sciences. I love reading philosophical works, and my favorite thinker is Friedrich Wilhelm Nietzsche. I speak Chinese and English, and I’m currently studying French and Arabic. I really hope to make friends from all over the world, and I truly believe that computer science can serve as a bridge to bring people together.
 
-I will make this page more beautiful in the future. To greet you, I would like to post my photo here, thank you for visiting my website!
+I’m also a big fan of aviation. In my spare time, I often go near airports to take photos of those giant iron birds. It used to be my dream to become a pilot. I’ve always loved the feeling of flying freely, without limitations—though, of course, pilots have to follow strict rules. I was pretty naive back then!
+
+I’ll keep working on making this page more beautiful over time. For now, here’s a photo as a small greeting. Thanks so much for visiting!
 ![This is James!](/images/HomePage.png)
 
