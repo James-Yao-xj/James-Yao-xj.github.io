@@ -1,6 +1,6 @@
 ---
 title: "Estimation of a Moon Colonization Plan"
-collection: MCM Competition
+collection: publications
 category: manuscripts
 permalink: /publication/MCM_Essay
 excerpt: 'This is an essay about the possibility of moving 100,000 people from the Earth to the Moon.'
