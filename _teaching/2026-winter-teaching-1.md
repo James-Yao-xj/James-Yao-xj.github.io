@@ -10,4 +10,6 @@ location: "Peking, China"
 
 
 This is a home tutoring course for high school student.
+This course includes the basic knowledge a student should understand. You can visit [this page](https://github.com/James-Yao-xj/HighSchoolMathEasyVersion) to get the handout. 
+The handout was built with typst, you may have to download some fonts to get the best viewing experience.
 
