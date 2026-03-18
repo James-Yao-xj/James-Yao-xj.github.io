@@ -2,7 +2,7 @@
 title: "Resistance in Shades of Grey"
 collection: publications
 category: manuscripts
-permalink: /publication/2026-01-20-history-essay.md
+permalink: /publication/2026-01-20-history-essay
 excerpt: 'This is the final essay of my French History course, discussing the Vichy Regime and the resistance of France in 1940-45.'
 date: 2026-01-20
 venue: 'No Official Journal'
