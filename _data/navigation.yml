@@ -20,6 +20,9 @@ main:
   #- title: "Portfolio"
   #  url: /portfolio/
         
+  - title: "CourseNote"
+    url: /coursenote/
+
   - title: "Blog Posts"
     url: /year-archive/
     
