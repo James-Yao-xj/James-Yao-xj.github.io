@@ -18,8 +18,20 @@ redirect_from:
 
 ## Summary
 
-Currently a student in PKU, EECS department
+I am Yao Xingjian, a student at the School of Electronics Engineering and Computer Science, Peking University. I am currently transitioning from my freshman to sophomore year, and I have a strong interest in artificial intelligence. I have always looked forward to applying what I have learned to real-world projects, gaining hands-on experience, and contributing new momentum to technological progress.
 
+Beyond my major, I am also drawn to the humanities and social sciences. During my freshman year, I took courses such as Modern Western Philosophy, French History, College Chinese, and France in the Age of Absolutism, which broadened my intellectual horizons and sharpened my critical thinking. I also focused on developing my communication skills by taking an English Public Speaking course.
+
+At the same time, as a Peking University student, I actively participate in various support and outreach activities. I joined the “Chisu Xinyou” (Heart-to-Heart Letters) project, through which I exchange letters regularly with a paired middle school student, keeping a humanistic focus alive in the age of AI. I believe that, in an era of ever‑advancing technology, the development of artificial intelligence must also be guided by humanistic care in order to better serve human society.
+
+## Projects
+I am currently working on two projects, both related to AI applications.
+
+The first is the "Innovation+ Workstation" project, a collaboration between Cylingo and the School of Electronics Engineering and Computer Science at Peking University. It focuses on exploring how large models can guide ordinary people to take more aesthetically pleasing photos with their smartphones. Through this project, I have gained knowledge in areas such as image segmentation and aesthetic evaluation.
+
+The second is the development of the "Qianli Interactive Novel Reading Platform," which primarily uses large models to generate novel content and allows the storyline to change based on the user's choices. Through this project, I have learned prompt engineering and developed a deeper understanding of both the limitations and the strengths of AI.
+
+Through these two projects, I have accumulated substantial hands-on knowledge in AI applications and have also strengthened my teamwork and innovation skills. They have been immensely helpful to both my studies and my daily life.
 ## Education
 
 - **Peking University** — Bachelor's degree in computer science  
@@ -34,7 +46,7 @@ Currently a student in PKU, EECS department
 ## Skills
 
 - **Sports:** Badminton, Marathon, Tennis, Volleyball.
-- **Programming:** Learning C++ and Python right now.
+- **Programming:** C++, Python, claude code.
 
 ## Languages
 
@@ -46,10 +58,7 @@ Currently a student in PKU, EECS department
 - **Major interest:** AI development
 - **Hobbies:** Aviation
 
-## Publications
 
-- **情系母校** — Journal 1 *(Expected: 2026-11-01)*  
-  This paper documented some of my high school memories, together with some of my learning strategies.
 
 ## Presentations
 
@@ -59,12 +68,8 @@ Currently a student in PKU, EECS department
 
 ## Work
 
-暂无
+I am having an intership at cylingo, and my job is to build an AI driven camera to help people take better pictures.
 
-## Teaching
 
-暂无
 
-## Portfolio
 
-- **Portfolio item number 1** — Short description of portfolio item number 1
