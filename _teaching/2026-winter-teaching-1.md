@@ -1,5 +1,5 @@
 ---
-title: "Teaching experience 1"
+title: "Home Tutoring"
 collection: teaching
 type: "High School math Course"
 permalink: /teaching/2026-winter-teaching-1
