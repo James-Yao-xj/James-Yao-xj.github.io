@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 1 课 · 城堡证券是谁、做什么、靠什么赚钱</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="page">
+
+  <p class="kicker">第 1 课 · 概览</p>
+  <h1>城堡证券是谁、做什么、靠什么赚钱</h1>
+
+  <p class="lede">一句话先记住：城堡证券是全球最大的<strong>做市商</strong>之一——它不靠"预测涨跌"赚钱，而是靠在每一笔买卖之间赚取极小的<strong>价差</strong>，再乘以天文数字的交易量。这一课给你一张完整的地图，为后面的求职准备打底。</p>
+
+  <div class="toc">
+    <span class="toc__label">本课地图</span>
+    <ol>
+      <li><a href="#foundation">两个底层概念（无需任何背景）</a></li>
+      <li><a href="#marketmaker">核心：做市商与买卖价差</a></li>
+      <li><a href="#who">城堡证券是谁</a></li>
+      <li><a href="#scope">业务范围</a></li>
+      <li><a href="#profit">盈利模式（一步步拆）</a></li>
+      <li><a href="#roles">岗位地图</a></li>
+      <li><a href="#next">下一步</a></li>
+    </ol>
+  </div>
+
+  <h2 id="foundation">1 · 两个底层概念（无需任何金融背景）</h2>
+  <p><strong>股票</strong>是一家公司的所有权，被切成很多份，每一份叫"一股"。<strong>交易所</strong>（如纽交所 NYSE、纳斯达克 Nasdaq）就是集中撮合买卖双方的地方。</p>
+  <p>但现实里有个问题：你想卖的时候，未必正好有人想买。如果每次都得等到一个正好相反方向的人，市场会变得又慢又贵。<strong>谁来保证你随时能成交？</strong>——这就引出了做市商。</p>
+
+  <h2 id="marketmaker">2 · 核心：做市商与买卖价差</h2>
+  <div class="def">
+    <span class="def__term">做市商 Market Maker</span>
+    <p>持续同时报出<strong>买入价（bid）</strong>和<strong>卖出价（ask）</strong>、承诺随时买卖的机构。它的存在，让市场"随时有人接盘"。</p>
+  </div>
+  <p>看一个具体例子：苹果股票当前约 <strong>$150</strong>。做市商会同时报两个价——愿意以 <strong>$149.99</strong> 买入（bid），以 <strong>$150.01</strong> 卖出（ask）。你按 $150.01 买、别人按 $149.99 卖，中间这 <strong>2 美分的差</strong>就是<span class="term" title="见术语表">买卖价差（bid-ask spread）</span>，是做市商赚的钱。</p>
+  <p>关键在于：<strong>价差极小、单笔几乎不赚钱，但交易量极大，积少成多</strong>。这就是这家公司盈利模式的本质——后面第 5 节会拆开讲。</p>
+
+  <h2 id="who">3 · 城堡证券是谁</h2>
+  <p>城堡证券（Citadel Securities）由 Ken Griffin 于 2002 年创立，现任 CEO 是彭照（Peng Zhao），总部在迈阿密，约 1,800 名员工（约 1/6 是博士）。</p>
+  <p>求职前必须分清的一件事：它与 <strong>Citadel LLC</strong> 不是同一家公司。</p>
+  <div class="table-wrap">
+    <table>
+      <tr><th></th><th>Citadel Securities</th><th>Citadel LLC</th></tr>
+      <tr><td>类型</td><td>做市商</td><td>对冲基金</td></tr>
+      <tr><td>怎么赚钱</td><td>赚价差</td><td>管外部资金、多策略投资</td></tr>
+      <tr><td>持有周期</td><td>微秒到一天</td><td>几天到几个月</td></tr>
+    </table>
+  </div>
+  <p>两者同属 Griffin，但业务、团队、薪酬、招聘流程都完全独立。你听到"Citadel"时，要先问一句：指的是对冲基金，还是做市商？</p>
+
+  <h2 id="scope">4 · 业务范围（它在哪些市场做市）</h2>
+  <p>城堡证券在多个资产类别里做市：<strong>股票</strong>（最核心）、<strong>上市期权</strong>（2025 年收购摩根士丹利期权业务后成为美国第一）、<strong>债券</strong>、<strong>外汇</strong>、<strong>大宗商品</strong>、<strong>加密货币</strong>。</p>
+  <p>客户有两类：一是 <strong>1,600+ 机构客户</strong>（央行、主权基金、资管、银行、券商、对冲基金、养老金）；二是<strong>散户订单流</strong>——Robinhood、嘉信等券商把散户的订单送过来。</p>
+  <div class="keynums">
+    <div class="keynum"><div class="keynum__n">~25%</div><div class="keynum__l">美国股票交易份额</div></div>
+    <div class="keynum"><div class="keynum__n">~40%</div><div class="keynum__l">美国散户股票订单份额</div></div>
+    <div class="keynum"><div class="keynum__n">1600+</div><div class="keynum__l">机构客户</div></div>
+  </div>
+
+  <h2 id="profit">5 · 盈利模式（一步步拆）</h2>
+  <p><strong>① 收价差。</strong> bid 与 ask 之间的差 × 海量交易，是收入的源头。</p>
+  <p><strong>② 拿订单流。</strong> 做市商向券商支付<span class="term" title="见术语表">订单流费用（PFOF）</span>，换取散户订单——这正是 Robinhood 能"零佣金"的真相：对你免费，但你的订单被卖给了做市商。</p>
+  <p><strong>③ 靠技术与速度。</strong> 用<span class="term" title="见术语表">量化</span>模型、机器学习、<span class="term" title="见术语表">低延迟</span>系统，在极短时间内给上百万个产品定出准确价格。规模与速度是护城河。</p>
+  <div class="note">
+    <span class="note__label">别误解：这不是"免费印钱"</span>
+    <p>做市有两个真实风险。一是<strong>逆向选择</strong>：对手可能比你知道得更多，你刚以 $150.01 卖出，股价就跳到了 $155。二是<strong>库存风险</strong>：手里囤的头寸价格反向变动。城堡证券用对冲等手段管理风险，目标是赚价差、<strong>不赌方向</strong>。</p>
+  </div>
+
+  <h2 id="roles">6 · 岗位地图（本课只画地图）</h2>
+  <p>三条主线，对应三种不同的能力倾向：</p>
+  <div class="table-wrap">
+    <table>
+      <tr><th>岗位</th><th>一句话</th><th>核心能力</th></tr>
+      <tr><td>量化研究员（QR）</td><td>研究能预测价格的规律和模型</td><td>概率统计、机器学习、Python</td></tr>
+      <tr><td>软件工程师 / 量化开发（SWE/QD）</td><td>搭低延迟交易系统和基础设施</td><td>C++、系统设计、高性能</td></tr>
+      <tr><td>量化交易员（QT）</td><td>盯做市报价、执行与风险</td><td>心算、概率、市场直觉</td></tr>
+    </table>
+  </div>
+  <div class="note">
+    <span class="note__label">给零基础的你</span>
+    <p>三条线里，<strong>软件工程 / 量化开发</strong>对"金融知识"的要求通常最低、最看重编程能力——如果你是技术背景起步，这往往是最先值得评估的方向。但先别急着下结论，后面的课会一条条拆开讲。</p>
+  </div>
+  <p class="src">实习约 11 周是转正主路径；录取率低于 1%；各岗位起薪见<a href="../reference/company-fact-sheet.html">事实速查表</a>。</p>
+
+  <h2 id="next">7 · 下一步</h2>
+  <p>现在你已经能回答两个问题：<strong>城堡证券是做什么的</strong>（做市商）、<strong>靠什么赚钱</strong>（价差 × 规模 × 技术）。建议你做一件事：</p>
+  <blockquote>合上这一页，试着用一句话向别人复述"城堡证券靠什么赚钱"。如果卡住了，说明哪里还没真正理解——回来问我。</blockquote>
+
+  <div class="note">
+    <span class="note__label">建议阅读（一手资料）</span>
+    <p>优先读城堡证券官方科普 <a href="https://www.citadelsecurities.com/what-we-do/what-is-a-market-maker/">《What Is a Market Maker?》</a>，它是理解做市商的权威入门。更多来源见 <a href="../RESOURCES.md">资源清单</a>。</p>
+  </div>
+
+  <div class="next">
+    <span class="next__label">继续学习</span>
+    <ul>
+      <li><a href="0002-how-market-makers-quote.html">第 2 课 · 做市机制：订单簿、价差与流动性</a> →</li>
+      <li><a href="../index.html">课程首页（完整大纲）</a></li>
+    </ul>
+    <p style="margin-top:0.8rem;">速查：<a href="../reference/company-fact-sheet.html">公司事实速查表</a> · <a href="../GLOSSARY.md">术语表</a> · <a href="../RESOURCES.md">资源清单</a>。有任何不清楚的地方直接问我，我是你的老师。</p>
+  </div>
+
+</div>
+</body>
+</html>

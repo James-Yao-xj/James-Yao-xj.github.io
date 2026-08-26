@@ -1,15 +1,23 @@
 ---
 layout: single
-title: "西方现代哲学课程笔记"
-permalink: /coursenote/
+title: "Learning"
+permalink: /learning/
 author_profile: true
+redirect_from:
+  - /coursenote/
 ---
 
-This is my Modern Western Philosophy course note using typst[Typst](https://typst.app/) and you can see it in my github repo [GitHub repo](https://github.com/James-Yao-xj/PKUcourseNote)。
+这里汇总我的课程笔记与自主学习内容。
 
-##  download
+## SchoolNote
 
-- [Chinese PDF]({{ site.baseurl }}/files/WesternModernPhilosophy-CN.pdf)
-- [English PDF]({{ site.baseurl }}/files/WesternModernPhilosophy-EN.pdf)
+学校课程中的笔记与整理。
 
+[进入 SchoolNote]({{ site.baseurl }}/learning/school-note/)
+
+## SelfStudy
+
+课外自主学习的专题课程与参考资料。
+
+[进入 SelfStudy]({{ site.baseurl }}/learning/self-study/)
 

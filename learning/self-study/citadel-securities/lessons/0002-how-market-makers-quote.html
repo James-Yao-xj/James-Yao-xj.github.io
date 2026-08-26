@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 2 课 · 做市机制：订单簿、价差与流动性</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="page">
+
+  <p class="kicker">第 2 课 · 做市机制</p>
+  <h1>订单簿、价差与流动性</h1>
+
+  <p class="lede">上一课你知道了"做市商靠价差赚钱"。这一课把它拆开看：价差到底怎么形成的？做市商为什么能"随时"报出两个价？学完你脑子里会有一张"订单簿"的图。</p>
+
+  <h2>1 · 订单簿：所有买卖意愿的排队</h2>
+  <div class="def">
+    <span class="def__term">订单簿 Order Book</span>
+    <p>一个交易所里所有"想买"和"想卖"的订单的实时列表。想买的人出价排队（叫<strong>买盘 bid</strong>），想卖的人报价排队（叫<strong>卖盘 ask</strong>）。</p>
+  </div>
+  <p>关键区别两类订单：<strong>限价单（limit order）</strong>是"我最多愿意出 $149.99 买"——挂在订单簿上等成交；<strong>市价单（market order）</strong>是"现在就按最好价格成交"——直接吃掉对手方最好的挂单。</p>
+
+  <h2>2 · 一张订单簿长什么样（苹果股票的例子）</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th>买盘（bid）</th><th>价格</th><th>卖盘（ask）</th></tr>
+      <tr><td></td><td>$150.05</td><td>200 股</td></tr>
+      <tr><td></td><td>$150.02</td><td>500 股</td></tr>
+      <tr><td></td><td><strong>$150.01 ← 最好卖价 (best ask)</strong></td><td>300 股</td></tr>
+      <tr><td><strong>$149.99 ← 最好买价 (best bid)</strong></td><td>$149.99</td><td></td></tr>
+      <tr><td>800 股</td><td>$149.98</td><td></td></tr>
+      <tr><td>1,000 股</td><td>$149.95</td><td></td></tr>
+    </table>
+  </div>
+  <p>最高的买价 $149.99 叫<strong>最好买价（best bid）</strong>，最低的卖价 $150.01 叫<strong>最好卖价（best ask）</strong>。这二者之间的空隙，就是<strong>价差（spread）</strong>——本例中是 $0.02。</p>
+
+  <h2>3 · 做市商 = 同时站在买卖两边的人</h2>
+  <p>普通投资者要么挂买单、要么挂卖单。做市商不一样：它<strong>同时</strong>在买盘报一个价、在卖盘报一个价，这叫<strong>双向报价（two-sided quote）</strong>。它承诺：你随时想买，我卖给你；你随时想卖，我买下来。</p>
+  <p>它赚的就是这 2 美分的差价——你以 $150.01 买走它 $149.99 吃进的货，它落袋 2 美分。单笔微利，但一天重复数百万次。</p>
+
+  <h2>4 · 中间价（mid）与"公允价"</h2>
+  <p><strong>中间价 =（best bid + best ask）÷ 2</strong>，本例是 $150.00。它被当作市场对这只股票"当下公允价"的最佳估计。做市商报价越贴近真实的公允价，越不容易被"更聪明的对手"占便宜——这一点下一课会展开。</p>
+
+  <h2>5 · 流动性：价差为什么重要</h2>
+  <div class="def">
+    <span class="def__term">流动性 Liquidity</span>
+    <p>一项资产能被快速买卖、且不显著影响其价格的程度。价差越窄、挂单越厚，流动性越好，交易成本越低。</p>
+  </div>
+  <p>想象你要买一只"没人交易"的小股票，买价和卖价可能差 5%；而像苹果这种票，价差常常只有 1 分钱。做市商之间的<strong>竞争</strong>会把价差越压越窄——这正是散户交易成本几十年来大幅下降的原因之一。</p>
+
+  <div class="note">
+    <span class="note__label">一分钟心智模型</span>
+    <p>做市商通过"双边挂单"为市场提供流动性；它赚 best bid 与 best ask 之间的价差；价差大小，反映市场的流动性与做市商承担的风险。记住这张订单簿的图，后面所有内容都建立在这上面。</p>
+  </div>
+
+  <div class="foot-src">
+    <p class="next__label">来源</p>
+    <ul>
+      <li><a href="https://www.citadelsecurities.com/what-we-do/what-is-a-market-maker/">Citadel Securities — What Is a Market Maker?</a></li>
+      <li><a href="https://www.quantquestions.app/blog/market-making-explained">Quant Questions — Market Making Explained</a></li>
+    </ul>
+  </div>
+
+  <div class="next">
+    <span class="next__label">继续学习</span>
+    <ul>
+      <li>← <a href="0001-what-is-citadel-securities.html">第 1 课 · 概览</a></li>
+      <li><a href="0003-profit-model-and-risk.html">第 3 课 · 盈利模式与风险</a> →</li>
+    </ul>
+    <p style="margin-top:0.6rem;">速查：<a href="../reference/market-mechanics.html">做市机制速查</a> · <a href="../GLOSSARY.md">术语表</a> · <a href="../index.html">课程首页</a>。有疑问直接问我。</p>
+  </div>
+
+</div>
+</body>
+</html>

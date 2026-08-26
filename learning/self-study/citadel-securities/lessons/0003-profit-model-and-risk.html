@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 3 课 · 盈利模式与风险</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="page">
+
+  <p class="kicker">第 3 课 · 盈利模式与风险</p>
+  <h1>价差 × 规模 × 技术，与两大真实风险</h1>
+
+  <p class="lede">做市商赚价差听起来简单，但为什么能赚到 122 亿美元？又为什么有人说这不是"印钱"？这一课把盈利逻辑和它背后的风险一次讲清。</p>
+
+  <h2>1 · 收入的本质：价差 × 成交量</h2>
+  <p>单笔只赚 1–2 美分，但城堡证券每天处理的是<strong>天文数字的成交量</strong>。利润 =（每笔价差 × 笔数）− 成本。规模是做市商生命线——量不够，微利养不起庞大的技术和人才投入。2025 年它净交易收入约 <strong>$122 亿</strong>，靠的就是这个"薄利多销"。</p>
+
+  <h2>2 · PFOF：散户订单是怎么"买"来的</h2>
+  <p>量从哪里来？很大一块来自<strong>散户订单流</strong>。券商（Robinhood、嘉信等）把客户的订单路由给做市商，做市商为此付费——这就是<span class="term" title="见术语表">订单流费用（PFOF）</span>。这正是 Robinhood 能"零佣金"的真相：</p>
+  <blockquote>你下单不付佣金，是因为券商把你的订单"卖"给了做市商，做市商替你付了这笔钱，再用价差赚回来。</blockquote>
+  <p>规模有多大？据 Moody's 2025 年报告，美国 <strong>27% 的股票成交量、51% 的期权成交量</strong>涉及 PFOF，而做市商拿到了其中 96% 的股票散户流、94% 的期权散户流。</p>
+
+  <h2>3 · 风险一：逆向选择（对手比你知道得多）</h2>
+  <div class="def">
+    <span class="def__term">逆向选择 Adverse Selection</span>
+    <p>做市商与信息比自己更灵通的对手成交、从而吃亏的风险。</p>
+  </div>
+  <p>例子：你以 $150.01 卖出苹果股票，但买走它的人其实知道一个利好、股价马上要涨到 $155。你"便宜地"把货卖给了更懂行的人。做市商每天都在和这样的风险博弈——它的对策是<strong>把价报得准</strong>、并快速调整。</p>
+
+  <h2>4 · 风险二：库存风险（手里囤的货反向波动）</h2>
+  <p>做市商成交后会短暂"持有"头寸。如果客户一直在卖苹果股票，做市商就会被动囤一大堆货；若此时苹果股价下跌，这些库存就亏了。这叫<span class="term" title="见术语表">库存风险</span>。</p>
+
+  <h2>5 · 对冲：把"方向"风险关掉</h2>
+  <p>做市商的目标是赚价差、<strong>不赌方向</strong>。它用<strong>对冲（hedging）</strong>把方向风险尽量关掉。最经典的是期权做市中的 <strong>delta 对冲</strong>：卖出一份看涨期权的同时，买入对应数量的标的股票，让价格涨跌对它"大致中性"，只剩价差和波动率风险可赚。</p>
+
+  <h2>6 · 护城河：规模、技术与速度</h2>
+  <p>为什么是城堡证券而不是随便谁？因为它有<strong>技术护城河</strong>：量化模型 + 机器学习 + 极低延迟系统，能在极短时间内给上百万个产品定出准确价格，并在风险刚出现时毫秒级调整。它约 1,800 名员工里 1/6 是博士，本质是一家"披着金融外壳的科技公司"。</p>
+
+  <div class="note">
+    <span class="note__label">一句话总结</span>
+    <p>做市商赚钱 = <strong>赚价差</strong>（薄利）× <strong>靠规模</strong>（PFOF 换来海量订单）× <strong>靠技术对冲两大风险</strong>（逆向选择、库存风险）。它不是印钱，是一场每天都要赢的、毫米级的风险游戏。</p>
+  </div>
+
+  <div class="foot-src">
+    <p class="next__label">来源</p>
+    <ul>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-03-24/citadel-securities-nets-record-12-billion-trading-haul-in-2025">Bloomberg — 2025 财务数据</a></li>
+      <li><a href="https://www.investmentexecutive.com/news/research-and-markets/u-s-payment-for-order-flow-at-record-levels-moodys/">Moody's — PFOF 数据（2025）</a></li>
+      <li><a href="https://www.quantquestions.app/blog/market-making-explained">Quant Questions — Market Making Explained</a></li>
+      <li><a href="https://www.citadelsecurities.com/what-we-do/what-is-a-market-maker/">Citadel Securities — What Is a Market Maker?</a></li>
+    </ul>
+  </div>
+
+  <div class="next">
+    <span class="next__label">继续学习</span>
+    <ul>
+      <li>← <a href="0002-how-market-makers-quote.html">第 2 课 · 做市机制</a></li>
+      <li><a href="0004-industry-landscape.html">第 4 课 · 行业版图</a> →</li>
+    </ul>
+    <p style="margin-top:0.6rem;">速查：<a href="../reference/company-fact-sheet.html">公司事实速查表</a> · <a href="../GLOSSARY.md">术语表</a> · <a href="../index.html">课程首页</a>。有疑问直接问我。</p>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>做市机制速查</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="page">
+
+  <p class="kicker">Reference · 速查</p>
+  <h1>做市机制速查：订单簿、价差、流动性</h1>
+  <p class="lede">第 2–3 课的压缩要点。复习时先看这张表。</p>
+
+  <h2>核心概念</h2>
+  <table>
+    <tr><td>订单簿（Order Book）</td><td>所有买单/卖单的实时排队列表</td></tr>
+    <tr><td>限价单（Limit Order）</td><td>"最多 $149.99 买"——挂在簿上等成交</td></tr>
+    <tr><td>市价单（Market Order）</td><td>"现在就按最好价成交"——吃掉对手方最好挂单</td></tr>
+    <tr><td>最好买价（Best Bid）</td><td>买盘里最高的价</td></tr>
+    <tr><td>最好卖价（Best Ask）</td><td>卖盘里最低的价</td></tr>
+    <tr><td>价差（Spread）</td><td>Best Ask − Best Bid</td></tr>
+    <tr><td>中间价（Mid）</td><td>(Best Bid + Best Ask) ÷ 2，市场对公允价的估计</td></tr>
+  </table>
+
+  <h2>做市商怎么赚钱</h2>
+  <ul>
+    <li>同时报 <strong>bid</strong>（买）和 <strong>ask</strong>（卖），双向报价，赚价差。</li>
+    <li>利润 = 每笔价差 × 成交量 − 成本；单笔微利，靠规模。</li>
+  </ul>
+
+  <h2>两大风险</h2>
+  <table>
+    <tr><td>逆向选择</td><td>对手比你信息灵通，你便宜卖出/买贵了</td></tr>
+    <tr><td>库存风险</td><td>成交后持仓，价格反向波动亏损</td></tr>
+  </table>
+  <p>对策：把价报准、快速调整、<strong>对冲</strong>（如期权做市的 delta 对冲），目标是赚价差、不赌方向。</p>
+
+  <h2>一句话</h2>
+  <p>做市商 = 双边挂单提供流动性，赚 best bid/best ask 之间的价差；价差大小反映流动性与风险。</p>
+
+  <p class="src">回到 <a href="../lessons/0002-how-market-makers-quote.html">第 2 课</a> · <a href="../lessons/0003-profit-model-and-risk.html">第 3 课</a> · <a href="../index.html">课程首页</a></p>
+
+</div>
+</body>
+</html>
