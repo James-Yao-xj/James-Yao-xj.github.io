@@ -5,7 +5,7 @@ layout: compress
 {% include base_path %}
 
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+<html lang="{{ page.lang | default: site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,8 @@ layout: compress
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %} | {{ site.name | default: site.title }}</title>
     {% include head.html %}
     {% include head/custom.html %}
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/cv-layout.css">
+    <link rel="stylesheet" href="{{ '/tokens.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/cv-layout.css' | relative_url }}">
   </head>
 
   <body class="cv-layout">
@@ -21,7 +22,7 @@ layout: compress
     {% include masthead.html %}
 
     <div id="main" role="main">
-      <div class="container">
+      <div class="cv-page-frame">
         {{ content }}
       </div>
     </div>
