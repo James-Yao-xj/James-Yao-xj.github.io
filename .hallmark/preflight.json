@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-31",
+  "font_stack": "Academic Pages system stack; CV uses a dedicated Arial/SimSun-compatible stack",
+  "palette": "Site theme variables preserved; CV derives navy, blue, muted text, and rule colors from Typst",
+  "motion": "motion-cut",
+  "spacing": "dedicated 4px/8px-derived CV scale",
+  "framework": "Jekyll / Academic Pages",
+  "sources": ["_config.yml", "assets/css/main.scss", "_layouts/cv-layout.html", "_pages/cv.md"]
+}

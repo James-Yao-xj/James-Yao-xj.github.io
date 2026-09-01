@@ -1,0 +1,59 @@
+:root {
+  --color-cv-navy: #17365d;
+  --color-cv-blue: #2f5597;
+  --color-cv-ink: #20242b;
+  --color-cv-muted: #555b66;
+  --color-cv-rule: #b8c4d6;
+  --color-cv-paper: #fbfcfe;
+  --color-cv-canvas: #eef1f5;
+  --color-cv-control: #f7f8fa;
+  --color-cv-control-active: #17365d;
+  --color-cv-accent-ink: #f7f9fc;
+  --color-cv-focus: #2f5597;
+  --color-cv-shadow: rgba(23, 54, 93, 0.12);
+  --color-cv-dark-paper: #171b21;
+  --color-cv-dark-canvas: #101318;
+  --color-cv-dark-ink: #edf1f5;
+  --color-cv-dark-muted: #b7c0cb;
+  --color-cv-dark-rule: #3c536e;
+  --color-cv-dark-control: #222832;
+  --color-cv-dark-accent: #91b8ee;
+
+  --font-cv-display: Georgia, "Noto Serif CJK SC", serif;
+  --font-cv-body: Arial, "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  --font-cv-zh: "SimSun", "Songti SC", "Noto Serif CJK SC", serif;
+
+  --space-cv-1: 0.25rem;
+  --space-cv-2: 0.5rem;
+  --space-cv-3: 0.75rem;
+  --space-cv-4: 1rem;
+  --space-cv-5: 1.5rem;
+  --space-cv-6: 2rem;
+  --space-cv-7: 3rem;
+
+  --text-cv-xs: 0.75rem;
+  --text-cv-sm: 0.875rem;
+  --text-cv-base: 0.96rem;
+  --text-cv-section: 1rem;
+  --text-cv-name: clamp(2.35rem, 7vw, 4.35rem);
+
+  --rule-cv-hairline: 1px;
+  --radius-cv-control: 0.2rem;
+  --radius-cv-sheet: 0.35rem;
+  --ease-cv-standard: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-cv-fast: 150ms;
+}
+
+html[data-theme="dark"] {
+  --color-cv-paper: var(--color-cv-dark-paper);
+  --color-cv-canvas: var(--color-cv-dark-canvas);
+  --color-cv-ink: var(--color-cv-dark-ink);
+  --color-cv-muted: var(--color-cv-dark-muted);
+  --color-cv-rule: var(--color-cv-dark-rule);
+  --color-cv-control: var(--color-cv-dark-control);
+  --color-cv-navy: var(--color-cv-dark-accent);
+  --color-cv-blue: var(--color-cv-dark-accent);
+  --color-cv-control-active: var(--color-cv-dark-accent);
+  --color-cv-accent-ink: var(--color-cv-dark-canvas);
+  --color-cv-focus: var(--color-cv-dark-accent);
+}
