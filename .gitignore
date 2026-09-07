@@ -18,6 +18,10 @@ package-lock.json
 
 # Ignore folders related to IDEs
 .vscode/
+.claude/
+
+# Ignore local design-tool metadata
+.hallmark/
 
 # Ignore files created by MacOS
 .DS_Store
