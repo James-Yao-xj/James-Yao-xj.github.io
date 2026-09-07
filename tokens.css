@@ -1,4 +1,37 @@
 :root {
+  --color-learning-paper: oklch(98% 0.012 82);
+  --color-learning-paper-2: oklch(94% 0.018 82);
+  --color-learning-ink: oklch(24% 0.025 255);
+  --color-learning-muted: oklch(42% 0.025 255);
+  --color-learning-rule: oklch(82% 0.025 82);
+  --color-learning-accent: oklch(46% 0.12 252);
+  --color-learning-accent-ink: oklch(98% 0.01 82);
+  --color-learning-focus: oklch(58% 0.16 252);
+
+  --font-learning-display: Georgia, "Noto Serif CJK SC", "Songti SC", serif;
+  --font-learning-body: Arial, "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  --font-learning-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  --space-learning-1: 0.25rem;
+  --space-learning-2: 0.5rem;
+  --space-learning-3: 0.75rem;
+  --space-learning-4: 1rem;
+  --space-learning-5: 1.5rem;
+  --space-learning-6: 2rem;
+  --space-learning-7: 3rem;
+  --space-learning-8: 4rem;
+
+  --text-learning-xs: 0.75rem;
+  --text-learning-sm: 0.875rem;
+  --text-learning-base: 1rem;
+  --text-learning-lg: 1.25rem;
+  --text-learning-display: clamp(2rem, 6vw, 4.5rem);
+
+  --rule-learning-hairline: 1px;
+  --radius-learning-control: 0.25rem;
+  --ease-learning-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-learning-short: 180ms;
+
   --color-cv-navy: #17365d;
   --color-cv-blue: #2f5597;
   --color-cv-ink: #20242b;
@@ -45,6 +78,15 @@
 }
 
 html[data-theme="dark"] {
+  --color-learning-paper: oklch(22% 0.02 255);
+  --color-learning-paper-2: oklch(27% 0.025 255);
+  --color-learning-ink: oklch(93% 0.014 82);
+  --color-learning-muted: oklch(78% 0.018 82);
+  --color-learning-rule: oklch(40% 0.028 255);
+  --color-learning-accent: oklch(76% 0.11 252);
+  --color-learning-accent-ink: oklch(20% 0.02 255);
+  --color-learning-focus: oklch(78% 0.14 252);
+
   --color-cv-paper: var(--color-cv-dark-paper);
   --color-cv-canvas: var(--color-cv-dark-canvas);
   --color-cv-ink: var(--color-cv-dark-ink);
