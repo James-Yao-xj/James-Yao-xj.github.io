@@ -1,0 +1,404 @@
+{
+  "repository": "https://github.com/James-Yao-xj/PKUcourseNote",
+  "revision": "11049cef6fc03b1f052e072ba44e063195d6d007",
+  "courses": [
+    {
+      "slug": "ics",
+      "title": "计算机系统导论",
+      "semester": 3,
+      "url": "/learning/school-note/ics/",
+      "chapters": [
+        {
+          "slug": "small-class-1",
+          "title": "小班课第一讲",
+          "source": "Semester3/ICS/Chapter1_Introduction/Lec1.typ",
+          "url": "/learning/school-note/ics/small-class-1/"
+        },
+        {
+          "slug": "lesson-1",
+          "title": "第一讲：计算机系统漫游",
+          "source": "Semester3/ICS/Chapter1_Introduction/Lesson1.typ",
+          "url": "/learning/school-note/ics/lesson-1/"
+        },
+        {
+          "slug": "lesson-2",
+          "title": "第二讲：位、字节与整数",
+          "source": "Semester3/ICS/Chapter1_Introduction/Lesson2.typ",
+          "url": "/learning/school-note/ics/lesson-2/"
+        },
+        {
+          "slug": "lesson-3",
+          "title": "第三讲：浮点数",
+          "source": "Semester3/ICS/Chapter1_Introduction/Lesson3.typ",
+          "url": "/learning/school-note/ics/lesson-3/"
+        },
+        {
+          "slug": "lesson-4",
+          "title": "第四讲：机器级程序基础",
+          "source": "Semester3/ICS/Chapter3/Lesson4/Lesson4.typ",
+          "url": "/learning/school-note/ics/lesson-4/"
+        },
+        {
+          "slug": "lesson-5",
+          "title": "第五讲：控制",
+          "source": "Semester3/ICS/Chapter3/Lesson5.typ",
+          "url": "/learning/school-note/ics/lesson-5/"
+        },
+        {
+          "slug": "lesson-6",
+          "title": "第六讲：过程",
+          "source": "Semester3/ICS/Chapter3/Lesson6/Lesson6.typ",
+          "url": "/learning/school-note/ics/lesson-6/"
+        },
+        {
+          "slug": "lesson-9",
+          "title": "第九讲：处理器架构与逻辑设计",
+          "source": "Semester3/ICS/Chapter4/Lesson9.typ",
+          "url": "/learning/school-note/ics/lesson-9/"
+        },
+        {
+          "slug": "bomb-lab",
+          "title": "Bomb Lab：汇编分析与调试",
+          "source": "Semester3/ICS/Chapter3/BombLab.typ",
+          "url": "/learning/school-note/ics/bomb-lab/"
+        },
+        {
+          "slug": "summary",
+          "title": "ICS 知识重点总结",
+          "source": "Semester3/ICS/ICS_知识重点总结.typ",
+          "url": "/learning/school-note/ics/summary/"
+        }
+      ]
+    },
+    {
+      "slug": "data-structures",
+      "title": "数据结构与算法",
+      "semester": 3,
+      "url": "/learning/school-note/data-structures/",
+      "chapters": [
+        {
+          "slug": "lesson-1",
+          "title": "第 1 讲",
+          "source": "Semester3/DataStructureAlgorithm/Lesson1_IntroAndFloyd/Lesson1.typ",
+          "url": "/learning/school-note/data-structures/lesson-1/"
+        },
+        {
+          "slug": "lesson-2",
+          "title": "第 2 讲",
+          "source": "Semester3/DataStructureAlgorithm/Lesson2/Lesson2.typ",
+          "url": "/learning/school-note/data-structures/lesson-2/"
+        },
+        {
+          "slug": "lesson-3",
+          "title": "第 3 讲",
+          "source": "Semester3/DataStructureAlgorithm/Lesson3/Lesson3.typ",
+          "url": "/learning/school-note/data-structures/lesson-3/"
+        }
+      ]
+    },
+    {
+      "slug": "discrete-mathematics",
+      "title": "离散数学基础",
+      "semester": 3,
+      "url": "/learning/school-note/discrete-mathematics/",
+      "chapters": [
+        {
+          "slug": "lesson-1",
+          "title": "第 1 讲",
+          "source": "Semester3/IDM/Lesson1.typ",
+          "url": "/learning/school-note/discrete-mathematics/lesson-1/"
+        },
+        {
+          "slug": "lesson-2",
+          "title": "第 2 讲",
+          "source": "Semester3/IDM/Lesson2.typ",
+          "url": "/learning/school-note/discrete-mathematics/lesson-2/"
+        },
+        {
+          "slug": "lesson-3",
+          "title": "第 3 讲",
+          "source": "Semester3/IDM/Lesson3.typ",
+          "url": "/learning/school-note/discrete-mathematics/lesson-3/"
+        },
+        {
+          "slug": "lesson-4",
+          "title": "第 4 讲",
+          "source": "Semester3/IDM/Lesson4.typ",
+          "url": "/learning/school-note/discrete-mathematics/lesson-4/"
+        },
+        {
+          "slug": "lesson-5",
+          "title": "第 5 讲",
+          "source": "Semester3/IDM/Lesson5.typ",
+          "url": "/learning/school-note/discrete-mathematics/lesson-5/"
+        }
+      ]
+    },
+    {
+      "slug": "probability",
+      "title": "信息学中的概率统计",
+      "semester": 3,
+      "url": "/learning/school-note/probability/",
+      "chapters": [
+        {
+          "slug": "lesson-1",
+          "title": "第 1 讲",
+          "source": "Semester3/ProbabilityTheoryAndStatistics/Lesson1.typ",
+          "url": "/learning/school-note/probability/lesson-1/"
+        },
+        {
+          "slug": "lesson-2",
+          "title": "第 2 讲",
+          "source": "Semester3/ProbabilityTheoryAndStatistics/Lesson2.typ",
+          "url": "/learning/school-note/probability/lesson-2/"
+        },
+        {
+          "slug": "lesson-3",
+          "title": "第 3 讲",
+          "source": "Semester3/ProbabilityTheoryAndStatistics/Lesson3.typ",
+          "url": "/learning/school-note/probability/lesson-3/"
+        },
+        {
+          "slug": "lesson-5",
+          "title": "第 5 讲",
+          "source": "Semester3/ProbabilityTheoryAndStatistics/Lesson5.typ",
+          "url": "/learning/school-note/probability/lesson-5/"
+        },
+        {
+          "slug": "lesson-6",
+          "title": "第 6 讲",
+          "source": "Semester3/ProbabilityTheoryAndStatistics/Lesson6.typ",
+          "url": "/learning/school-note/probability/lesson-6/"
+        },
+        {
+          "slug": "lesson-7",
+          "title": "第 7 讲",
+          "source": "Semester3/ProbabilityTheoryAndStatistics/Lesson7.typ",
+          "url": "/learning/school-note/probability/lesson-7/"
+        }
+      ]
+    },
+    {
+      "slug": "economics",
+      "title": "经济学原理",
+      "semester": 3,
+      "url": "/learning/school-note/economics/",
+      "chapters": [
+        {
+          "slug": "lesson-1",
+          "title": "第 1 讲",
+          "source": "Semester3/PrinciplesOfEconomics/Lesson1.typ",
+          "url": "/learning/school-note/economics/lesson-1/"
+        },
+        {
+          "slug": "lesson-2",
+          "title": "第 2 讲",
+          "source": "Semester3/PrinciplesOfEconomics/Lesson2.typ",
+          "url": "/learning/school-note/economics/lesson-2/"
+        },
+        {
+          "slug": "lesson-3",
+          "title": "第 3 讲",
+          "source": "Semester3/PrinciplesOfEconomics/figures/Lesson3.typ",
+          "url": "/learning/school-note/economics/lesson-3/"
+        }
+      ]
+    },
+    {
+      "slug": "set-theory",
+      "title": "集合论与图论",
+      "semester": 3,
+      "url": "/learning/school-note/set-theory/",
+      "chapters": [
+        {
+          "slug": "lesson-2",
+          "title": "第 2 讲",
+          "source": "Semester3/SetTheoryAndGraphTheory/Lesson2.typ",
+          "url": "/learning/school-note/set-theory/lesson-2/"
+        },
+        {
+          "slug": "lesson-3",
+          "title": "第 3 讲",
+          "source": "Semester3/SetTheoryAndGraphTheory/Lesson3.typ",
+          "url": "/learning/school-note/set-theory/lesson-3/"
+        },
+        {
+          "slug": "lesson-4",
+          "title": "第 4 讲",
+          "source": "Semester3/SetTheoryAndGraphTheory/Lesson4.typ",
+          "url": "/learning/school-note/set-theory/lesson-4/"
+        },
+        {
+          "slug": "lesson-9",
+          "title": "第 9 讲",
+          "source": "Semester3/SetTheoryAndGraphTheory/Lesson9.typ",
+          "url": "/learning/school-note/set-theory/lesson-9/"
+        }
+      ]
+    },
+    {
+      "slug": "western-philosophy",
+      "title": "西方现代哲学",
+      "semester": 2,
+      "url": "/learning/school-note/western-philosophy/",
+      "chapters": [
+        {
+          "slug": "en/nietzsche",
+          "title": "Nietzsche",
+          "source": "Semester2/WesternModernPhi/EnglishVersion/Nietzsche.typ",
+          "url": "/learning/school-note/western-philosophy/en/nietzsche/"
+        },
+        {
+          "slug": "en/frege",
+          "title": "Frege",
+          "source": "Semester2/WesternModernPhi/EnglishVersion/Frege.typ",
+          "url": "/learning/school-note/western-philosophy/en/frege/"
+        },
+        {
+          "slug": "en/russell",
+          "title": "Russell",
+          "source": "Semester2/WesternModernPhi/EnglishVersion/Russell.typ",
+          "url": "/learning/school-note/western-philosophy/en/russell/"
+        },
+        {
+          "slug": "en/wittgenstein",
+          "title": "Wittgenstein",
+          "source": "Semester2/WesternModernPhi/EnglishVersion/Wittgenstein.typ",
+          "url": "/learning/school-note/western-philosophy/en/wittgenstein/"
+        },
+        {
+          "slug": "en/heidegger",
+          "title": "Heidegger",
+          "source": "Semester2/WesternModernPhi/EnglishVersion/Heidegger.typ",
+          "url": "/learning/school-note/western-philosophy/en/heidegger/"
+        },
+        {
+          "slug": "en/langer",
+          "title": "Langer",
+          "source": "Semester2/WesternModernPhi/EnglishVersion/Langer.typ",
+          "url": "/learning/school-note/western-philosophy/en/langer/"
+        },
+        {
+          "slug": "en/godel",
+          "title": "Gödel",
+          "source": "Semester2/WesternModernPhi/EnglishVersion/Gödel.typ",
+          "url": "/learning/school-note/western-philosophy/en/godel/"
+        },
+        {
+          "slug": "en/arendt",
+          "title": "Arendt",
+          "source": "Semester2/WesternModernPhi/EnglishVersion/Arendt.typ",
+          "url": "/learning/school-note/western-philosophy/en/arendt/"
+        },
+        {
+          "slug": "en/quine",
+          "title": "Quine",
+          "source": "Semester2/WesternModernPhi/EnglishVersion/Quine.typ",
+          "url": "/learning/school-note/western-philosophy/en/quine/"
+        },
+        {
+          "slug": "en/turing",
+          "title": "Turing",
+          "source": "Semester2/WesternModernPhi/EnglishVersion/Turing.typ",
+          "url": "/learning/school-note/western-philosophy/en/turing/"
+        },
+        {
+          "slug": "en/murdoch",
+          "title": "Murdoch",
+          "source": "Semester2/WesternModernPhi/EnglishVersion/Murdoch.typ",
+          "url": "/learning/school-note/western-philosophy/en/murdoch/"
+        },
+        {
+          "slug": "en/kuhn",
+          "title": "Kuhn",
+          "source": "Semester2/WesternModernPhi/EnglishVersion/Kuhn.typ",
+          "url": "/learning/school-note/western-philosophy/en/kuhn/"
+        },
+        {
+          "slug": "en/kripke",
+          "title": "Kripke",
+          "source": "Semester2/WesternModernPhi/EnglishVersion/Kripke.typ",
+          "url": "/learning/school-note/western-philosophy/en/kripke/"
+        },
+        {
+          "slug": "zh/nietzsche",
+          "title": "尼采（Nietzsche）",
+          "source": "Semester2/WesternModernPhi/ChineseVersion/Nietzsche.typ",
+          "url": "/learning/school-note/western-philosophy/zh/nietzsche/"
+        },
+        {
+          "slug": "zh/frege",
+          "title": "弗雷格（Frege）",
+          "source": "Semester2/WesternModernPhi/ChineseVersion/Frege.typ",
+          "url": "/learning/school-note/western-philosophy/zh/frege/"
+        },
+        {
+          "slug": "zh/russell",
+          "title": "罗素（Russell）",
+          "source": "Semester2/WesternModernPhi/ChineseVersion/Russell.typ",
+          "url": "/learning/school-note/western-philosophy/zh/russell/"
+        },
+        {
+          "slug": "zh/wittgenstein",
+          "title": "维特根斯坦（Wittgenstein）",
+          "source": "Semester2/WesternModernPhi/ChineseVersion/Wittgenstein.typ",
+          "url": "/learning/school-note/western-philosophy/zh/wittgenstein/"
+        },
+        {
+          "slug": "zh/heidegger",
+          "title": "海德格尔（Heidegger）",
+          "source": "Semester2/WesternModernPhi/ChineseVersion/Heidegger.typ",
+          "url": "/learning/school-note/western-philosophy/zh/heidegger/"
+        },
+        {
+          "slug": "zh/langer",
+          "title": "朗格（Langer）",
+          "source": "Semester2/WesternModernPhi/ChineseVersion/Langer.typ",
+          "url": "/learning/school-note/western-philosophy/zh/langer/"
+        },
+        {
+          "slug": "zh/godel",
+          "title": "哥德尔（Gödel）",
+          "source": "Semester2/WesternModernPhi/ChineseVersion/Gödel.typ",
+          "url": "/learning/school-note/western-philosophy/zh/godel/"
+        },
+        {
+          "slug": "zh/arendt",
+          "title": "阿伦特（Arendt）",
+          "source": "Semester2/WesternModernPhi/ChineseVersion/Arendt.typ",
+          "url": "/learning/school-note/western-philosophy/zh/arendt/"
+        },
+        {
+          "slug": "zh/quine",
+          "title": "奎因（Quine）",
+          "source": "Semester2/WesternModernPhi/ChineseVersion/Quine.typ",
+          "url": "/learning/school-note/western-philosophy/zh/quine/"
+        },
+        {
+          "slug": "zh/turing",
+          "title": "图灵（Turing）",
+          "source": "Semester2/WesternModernPhi/ChineseVersion/Turing.typ",
+          "url": "/learning/school-note/western-philosophy/zh/turing/"
+        },
+        {
+          "slug": "zh/murdoch",
+          "title": "默多克（Murdoch）",
+          "source": "Semester2/WesternModernPhi/ChineseVersion/Murdoch.typ",
+          "url": "/learning/school-note/western-philosophy/zh/murdoch/"
+        },
+        {
+          "slug": "zh/kuhn",
+          "title": "库恩（Kuhn）",
+          "source": "Semester2/WesternModernPhi/ChineseVersion/Kuhn.typ",
+          "url": "/learning/school-note/western-philosophy/zh/kuhn/"
+        },
+        {
+          "slug": "zh/kripke",
+          "title": "克里普克（Kripke）",
+          "source": "Semester2/WesternModernPhi/ChineseVersion/Kripke.typ",
+          "url": "/learning/school-note/western-philosophy/zh/kripke/"
+        }
+      ]
+    }
+  ]
+}

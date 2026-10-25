@@ -78,6 +78,7 @@ exclude:
   - log
   - node_modules
   - package.json*
+  - scripts
   - README
   - tmp
   - vendor

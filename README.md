@@ -60,3 +60,16 @@ npm run build:js
 ## 许可与来源
 
 站点内容归姚行健所有。主题代码来自 Academic Pages / Minimal Mistakes，相关许可见 `LICENSE`。
+
+## 课程笔记网页版
+
+SchoolNote 的课程和章节都在本站阅读，页面继续使用统一的 `single` 布局。正文由 PKUcourseNote 的 Typst 源文件生成，公式用 SVG 保留符号，文字、代码和表格保留为 HTML；原始笔记链接位于文末。
+
+更新时准备 PKUcourseNote 的本地副本，安装 Typst 0.15.1 和 Python 依赖，再运行：
+
+```bash
+python3 -m pip install -r scripts/requirements-course-notes.txt
+python3 scripts/export_course_notes.py ../PKUcourseNote --revision <源仓库提交SHA>
+```
+
+脚本会更新 `_pages/learning/school-note/`、`assets/course-notes/` 和 `_data/course_notes.json`，保留来源版本。Typst 的 HTML 导出仍在实验阶段，更新后需核对导出日志 `local/course-note-export.log`，并检查公式、表格、代码、插图、目录和章节链接，再提交发布。网站发布只需 Jekyll，不需要在访客浏览器中运行 Typst。

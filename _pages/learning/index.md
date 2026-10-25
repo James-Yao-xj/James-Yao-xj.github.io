@@ -11,7 +11,7 @@ redirect_from:
 
 ## SchoolNote
 
-学校课程中的笔记与整理。
+学校课程中的笔记与整理，可按课程和章节在本站在线阅读。
 
 [进入 SchoolNote]({{ site.baseurl }}/learning/school-note/)
 

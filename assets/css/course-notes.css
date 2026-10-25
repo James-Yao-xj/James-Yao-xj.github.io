@@ -1,0 +1,103 @@
+/* Use the site theme for text. Keep wide content inside the reading column. */
+.course-note {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.course-note p {
+  text-wrap: pretty;
+}
+
+.course-note h2,
+.course-note h3,
+.course-note h4 {
+  scroll-margin-top: 80px;
+  text-wrap: balance;
+}
+
+.note-toc {
+  margin: 24px 0;
+  padding: 16px;
+  border: 1px solid var(--global-border-color);
+  border-radius: 4px;
+}
+
+.note-toc summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.note-toc ul {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.course-note a:focus-visible,
+.note-toc summary:focus-visible,
+.note-table:focus-visible {
+  outline: 2px solid var(--global-link-color);
+  outline-offset: 4px;
+}
+
+/* Inline formulas must not break the surrounding sentence into blocks. */
+.note-math {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 2px;
+}
+
+.note-math svg {
+  display: inline-block !important;
+  max-width: none;
+}
+
+.note-equation,
+.note-table {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 16px 0;
+  padding: 8px 0;
+}
+
+.note-equation svg {
+  margin-inline: auto;
+  max-width: none;
+}
+
+.course-note .note-symbols {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.note-table table {
+  margin: 0;
+  width: 100%;
+}
+
+.course-note img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 16px auto;
+  background: #ffffff;
+}
+
+.course-note pre {
+  white-space: pre;
+  overflow-x: auto;
+}
+
+.note-pagination {
+  margin-top: 32px;
+}
+
+.note-source {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 20px;
+}

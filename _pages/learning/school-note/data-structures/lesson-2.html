@@ -1,0 +1,138 @@
+---
+layout: "single"
+title: "数据结构与算法 · 第 2 讲"
+permalink: "/learning/school-note/data-structures/lesson-2/"
+author_profile: true
+course_note: true
+---
+
+{% raw %}<div class="course-note"><nav aria-label="笔记导航"><a href="{% endraw %}{{ site.baseurl }}{% raw %}/learning/school-note/">SchoolNote</a> · <a href="{% endraw %}{{ site.baseurl }}{% raw %}/learning/school-note/data-structures/">数据结构与算法</a></nav><details class="note-toc"><summary>本页目录</summary><ul><li><a href="#section-1">1. 兔子与樱花</a></li><li><a href="#section-2">1.1. 直接上代码</a></li></ul></details><p>数据结构与算法A 第二讲<br></p><p><em>来源：2026年9月11日课程笔记</em></p><p>这节课的前半段貌似什么都没讲，“貌似”二字可以去掉嘻嘻。早八来教室看论文也挺舒服的（bushi)</p><h2 id="section-1">1. 兔子与樱花</h2><p>原题参考<a href="http://cs101.openjudge.cn/practice/05443">http://cs101.openjudge.cn/practice/05443</a></p><p><strong>描述</strong></p><p>很久很久之前，森林里住着一群兔子。有一天，兔子们希望去赏樱花，但当他们到了上野公园门口却忘记了带地图。现在兔子们想求助于你来帮他们找到公园里的最短路。</p><p><strong>输入</strong></p><p>输入分为三个部分。</p><p>第一个部分有P+1行（P &lt; 30），第一行为一个整数P，之后的P行表示上野公园的地点, 字符串长度不超过20。</p><p>第二个部分有Q+1行（Q &lt; 50），第一行为一个整数Q，之后的Q行每行分别为两个字符串与一个整数，表示这两点有直线的道路，并显示二者之间的矩离（单位为米）。</p><p>第三个部分有R+1行（R &lt; 20），第一行为一个整数R，之后的R行每行为两个字符串，表示需要求的路线。</p><p><strong>输出</strong></p><p>输出有R行，分别表示每个路线最短的走法。其中两个点之间，用-&gt;(矩离)-&gt;相隔。</p><p><strong>样例输入</strong></p><pre><code>6
+Ginza
+Sensouji
+Shinjukugyoen
+Uenokouen
+Yoyogikouen
+Meijishinguu
+6
+Ginza Sensouji 80
+Shinjukugyoen Sensouji 40
+Ginza Uenokouen 35
+Uenokouen Shinjukugyoen 85
+Sensouji Meijishinguu 60
+Meijishinguu Yoyogikouen 35
+2
+Uenokouen Yoyogikouen
+Meijishinguu Meijishinguu</code></pre><p><strong>样例输出</strong></p><pre><code>Uenokouen-&gt;(35)-&gt;Ginza-&gt;(80)-&gt;Sensouji-&gt;(60)-&gt;Meijishinguu-&gt;(35)-&gt;Yoyogikouen
+Meijishinguu</code></pre><h3 id="section-2">1.1. 直接上代码</h3><pre><code data-lang="cpp">  <span style="color: #d73948">#include</span> <span style="color: #198810">&lt;</span><span style="color: #198810">iostream</span><span style="color: #198810">&gt;</span>
+<span style="color: #d73948">#include</span> <span style="color: #198810">&lt;</span><span style="color: #198810">string</span><span style="color: #198810">&gt;</span>
+<span style="color: #d73948">#include</span> <span style="color: #198810">&lt;</span><span style="color: #198810">vector</span><span style="color: #198810">&gt;</span>
+<span style="color: #d73948">#include</span> <span style="color: #198810">&lt;</span><span style="color: #198810">unordered_map</span><span style="color: #198810">&gt;</span>
+
+<span style="color: #d73948">using</span> <span style="color: #d73948">namespace</span> std;
+
+<span style="color: #d73948">int</span> <span style="color: #4b69c6">main</span>() {
+    <span style="color: #d73948">int</span> place;
+    cin <span style="color: #d73948">&gt;&gt;</span> place;
+
+    vector&lt;string&gt; <span style="color: #4b69c6">destination</span>(place);
+    unordered_map&lt;string, <span style="color: #d73948">int</span>&gt; id;
+
+    <span style="color: #d73948">for</span> (<span style="color: #d73948">int</span> i <span style="color: #d73948">=</span> <span style="color: #b60157">0</span>; i <span style="color: #d73948">&lt;</span> place; i<span style="color: #d73948">++</span>) {
+        cin <span style="color: #d73948">&gt;&gt;</span> destination[i];
+        id[destination[i]] <span style="color: #d73948">=</span> i;
+    }
+
+    <span style="color: #74747c">//</span><span style="color: #74747c"> -1 表示目前没有路线</span>
+    vector&lt;vector&lt;<span style="color: #d73948">long</span> <span style="color: #d73948">long</span>&gt;&gt; <span style="color: #4b69c6">dist</span>(
+        place, <span style="color: #4b69c6">vector</span>&lt;<span style="color: #d73948">long</span> <span style="color: #d73948">long</span>&gt;(place, <span style="color: #d73948">-</span><span style="color: #b60157">1</span>)
+    );
+
+    <span style="color: #74747c">//</span><span style="color: #74747c"> 保存两点之间的直接道路长度</span>
+    vector&lt;vector&lt;<span style="color: #d73948">long</span> <span style="color: #d73948">long</span>&gt;&gt; <span style="color: #4b69c6">roadLength</span>(
+        place, <span style="color: #4b69c6">vector</span>&lt;<span style="color: #d73948">long</span> <span style="color: #d73948">long</span>&gt;(place, <span style="color: #b60157">0</span>)
+    );
+
+    <span style="color: #74747c">//</span><span style="color: #74747c"> 保存最短路径的下一个地点</span>
+    vector&lt;vector&lt;<span style="color: #d73948">int</span>&gt;&gt; <span style="color: #4b69c6">nextPlace</span>(
+        place, <span style="color: #4b69c6">vector</span>&lt;<span style="color: #d73948">int</span>&gt;(place, <span style="color: #d73948">-</span><span style="color: #b60157">1</span>)
+    );
+
+    <span style="color: #d73948">for</span> (<span style="color: #d73948">int</span> i <span style="color: #d73948">=</span> <span style="color: #b60157">0</span>; i <span style="color: #d73948">&lt;</span> place; i<span style="color: #d73948">++</span>) {
+        dist[i][i] <span style="color: #d73948">=</span> <span style="color: #b60157">0</span>;
+        nextPlace[i][i] <span style="color: #d73948">=</span> i;
+    }
+
+    <span style="color: #d73948">int</span> road_num;
+    cin <span style="color: #d73948">&gt;&gt;</span> road_num;
+
+    <span style="color: #d73948">for</span> (<span style="color: #d73948">int</span> i <span style="color: #d73948">=</span> <span style="color: #b60157">0</span>; i <span style="color: #d73948">&lt;</span> road_num; i<span style="color: #d73948">++</span>) {
+        string start, end;
+        <span style="color: #d73948">long</span> <span style="color: #d73948">long</span> length;
+
+        cin <span style="color: #d73948">&gt;&gt;</span> start <span style="color: #d73948">&gt;&gt;</span> end <span style="color: #d73948">&gt;&gt;</span> length;
+
+        <span style="color: #d73948">int</span> u <span style="color: #d73948">=</span> id[start];
+        <span style="color: #d73948">int</span> v <span style="color: #d73948">=</span> id[end];
+
+        <span style="color: #74747c">//</span><span style="color: #74747c"> 如果没有保存过这条道路，或者新道路更短</span>
+        <span style="color: #d73948">if</span> (dist[u][v] <span style="color: #d73948">==</span> <span style="color: #d73948">-</span><span style="color: #b60157">1</span> <span style="color: #d73948">||</span> length <span style="color: #d73948">&lt;</span> dist[u][v]) {
+            dist[u][v] <span style="color: #d73948">=</span> length;
+            dist[v][u] <span style="color: #d73948">=</span> length;
+
+            roadLength[u][v] <span style="color: #d73948">=</span> length;
+            roadLength[v][u] <span style="color: #d73948">=</span> length;
+
+            nextPlace[u][v] <span style="color: #d73948">=</span> v;
+            nextPlace[v][u] <span style="color: #d73948">=</span> u;
+        }
+    }
+
+    <span style="color: #74747c">//</span><span style="color: #74747c"> Floyd 算法</span>
+    <span style="color: #d73948">for</span> (<span style="color: #d73948">int</span> k <span style="color: #d73948">=</span> <span style="color: #b60157">0</span>; k <span style="color: #d73948">&lt;</span> place; k<span style="color: #d73948">++</span>) {
+        <span style="color: #d73948">for</span> (<span style="color: #d73948">int</span> i <span style="color: #d73948">=</span> <span style="color: #b60157">0</span>; i <span style="color: #d73948">&lt;</span> place; i<span style="color: #d73948">++</span>) {
+            <span style="color: #d73948">for</span> (<span style="color: #d73948">int</span> j <span style="color: #d73948">=</span> <span style="color: #b60157">0</span>; j <span style="color: #d73948">&lt;</span> place; j<span style="color: #d73948">++</span>) {
+                <span style="color: #74747c">//</span><span style="color: #74747c"> i 到 k 或者 k 到 j 没有路线</span>
+                <span style="color: #d73948">if</span> (dist[i][k] <span style="color: #d73948">==</span> <span style="color: #d73948">-</span><span style="color: #b60157">1</span> <span style="color: #d73948">||</span> dist[k][j] <span style="color: #d73948">==</span> <span style="color: #d73948">-</span><span style="color: #b60157">1</span>) {
+                    <span style="color: #d73948">continue</span>;
+                }
+
+                <span style="color: #d73948">long</span> <span style="color: #d73948">long</span> newDistance <span style="color: #d73948">=</span> dist[i][k] <span style="color: #d73948">+</span> dist[k][j];
+
+                <span style="color: #d73948">if</span> (dist[i][j] <span style="color: #d73948">==</span> <span style="color: #d73948">-</span><span style="color: #b60157">1</span> <span style="color: #d73948">||</span> newDistance <span style="color: #d73948">&lt;</span> dist[i][j]) {
+                    dist[i][j] <span style="color: #d73948">=</span> newDistance;
+                    nextPlace[i][j] <span style="color: #d73948">=</span> nextPlace[i][k];
+                }
+            }
+        }
+    }
+
+    <span style="color: #d73948">int</span> check_num;
+    cin <span style="color: #d73948">&gt;&gt;</span> check_num;
+
+    <span style="color: #d73948">for</span> (<span style="color: #d73948">int</span> i <span style="color: #d73948">=</span> <span style="color: #b60157">0</span>; i <span style="color: #d73948">&lt;</span> check_num; i<span style="color: #d73948">++</span>) {
+        string start, end;
+        cin <span style="color: #d73948">&gt;&gt;</span> start <span style="color: #d73948">&gt;&gt;</span> end;
+
+        <span style="color: #d73948">int</span> current <span style="color: #d73948">=</span> id[start];
+        <span style="color: #d73948">int</span> target <span style="color: #d73948">=</span> id[end];
+
+        <span style="color: #d73948">if</span> (current <span style="color: #d73948">==</span> target) {
+            cout <span style="color: #d73948">&lt;&lt;</span> start <span style="color: #d73948">&lt;&lt;</span> <span style="color: #198810">'</span><span style="color: #1d6c76">\n</span><span style="color: #198810">'</span>;
+            <span style="color: #d73948">continue</span>;
+        }
+
+        <span style="color: #d73948">if</span> (nextPlace[current][target] <span style="color: #d73948">==</span> <span style="color: #d73948">-</span><span style="color: #b60157">1</span>) {
+            cout <span style="color: #d73948">&lt;&lt;</span> <span style="color: #198810">"</span><span style="color: #198810">No path</span><span style="color: #1d6c76">\n</span><span style="color: #198810">"</span>;
+            <span style="color: #d73948">continue</span>;
+        }
+        cout <span style="color: #d73948">&lt;&lt;</span> destination[current];
+        <span style="color: #d73948">while</span> (current <span style="color: #d73948">!=</span> target) {
+            <span style="color: #d73948">int</span> next <span style="color: #d73948">=</span> nextPlace[current][target];
+            cout <span style="color: #d73948">&lt;&lt;</span> <span style="color: #198810">"</span><span style="color: #198810">-&gt;(</span><span style="color: #198810">"</span> <span style="color: #d73948">&lt;&lt;</span> roadLength[current][next] <span style="color: #d73948">&lt;&lt;</span> <span style="color: #198810">"</span><span style="color: #198810">)-&gt;</span><span style="color: #198810">"</span>;
+            cout <span style="color: #d73948">&lt;&lt;</span> destination[next];
+            current <span style="color: #d73948">=</span> next;
+        }
+        cout <span style="color: #d73948">&lt;&lt;</span> <span style="color: #198810">'</span><span style="color: #1d6c76">\n</span><span style="color: #198810">'</span>;
+    }
+    <span style="color: #d73948">return</span> <span style="color: #b60157">0</span>;
+}</code></pre><nav class="note-pagination" aria-label="章节导航"><a href="{% endraw %}{{ site.baseurl }}{% raw %}/learning/school-note/data-structures/lesson-1/">上一篇：第 1 讲</a><br><a href="{% endraw %}{{ site.baseurl }}{% raw %}/learning/school-note/data-structures/lesson-3/">下一篇：第 3 讲</a></nav><p class="note-source"><a href="https://github.com/James-Yao-xj/PKUcourseNote/blob/11049cef6fc03b1f052e072ba44e063195d6d007/Semester3/DataStructureAlgorithm/Lesson2/Lesson2.typ">查看原始笔记</a></p></div>{% endraw %}
