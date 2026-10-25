@@ -1,0 +1,9 @@
+{
+  "ics": {"description": "从信息表示、机器级程序到处理器架构。", "topics": {}},
+  "data-structures": {"description": "数据组织、算法分析与 C++ 实现。", "topics": {"lesson-1": "课程导论与 Floyd 最短路", "lesson-2": "兔子与樱花：程序设计练习", "lesson-3": "线性表、栈与队列"}},
+  "discrete-mathematics": {"description": "集合、关系与函数的基础语言。", "topics": {"lesson-1": "集合与基本运算", "lesson-2": "集合运算与有穷集计数", "lesson-3": "笛卡尔积与二元关系", "lesson-4": "关系的性质与闭包", "lesson-5": "函数的定义与性质"}},
+  "probability": {"description": "从概率模型到随机变量、分布与期望。", "topics": {"lesson-1": "概率论的基本概念", "lesson-2": "概率公理与条件概率", "lesson-3": "独立事件与随机变量", "lesson-5": "期望、方差与离散分布", "lesson-6": "连续随机变量与分布", "lesson-7": "多维随机变量与条件期望"}},
+  "economics": {"description": "经济学的思维方式、偏好、选择与交换。", "topics": {"lesson-1": "经济学的思维方式", "lesson-2": "偏好与选择", "lesson-3": "交换、分工与货币"}},
+  "set-theory": {"description": "集合列、关系运算与偏序集。", "topics": {"lesson-2": "集合列的极限", "lesson-3": "卡氏积与多元关系", "lesson-4": "关系的投影与联接", "lesson-9": "偏序集与 Mirsky 定理"}},
+  "western-philosophy": {"description": "13 位思想家的中英文笔记，从尼采读到克里普克。", "topics": {}}
+}

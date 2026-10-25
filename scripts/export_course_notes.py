@@ -21,6 +21,7 @@ from lxml import etree, html
 SITE = Path(__file__).resolve().parents[1]
 READING_ROOT = '/learning/school-note/'
 SOURCE_REPO = 'https://github.com/James-Yao-xj/PKUcourseNote'
+COURSE_TOPICS = json.loads((SITE / '_data/course_topics.json').read_text())
 COURSES = [
     ('Semester3/ICS', 'ics', '计算机系统导论', 3),
     ('Semester3/DataStructureAlgorithm', 'data-structures', '数据结构与算法', 3),
@@ -95,7 +96,9 @@ def chapter_metadata(path, course):
         number = re.search(r'\d+', path.stem)
         return slug, title, (int(number[0]) if number else 100, path.stem)
     number = int(re.search(r'\d+', path.stem)[0])
-    return f'lesson-{number}', f'第 {number} 讲', (number, path.stem)
+    slug = f'lesson-{number}'
+    topic = COURSE_TOPICS[course]['topics'][slug]
+    return slug, f'第 {number} 讲：{topic}', (number, path.stem)
 
 
 def prepare_sources(source, staging):
@@ -208,12 +211,12 @@ def export(source, revision):
                 body = body.replace('{{ site.baseurl }}', '{% endraw %}{{ site.baseurl }}{% raw %}')
                 write_page(pages / course / (chapter['slug'] + '.html'), name + ' · ' + chapter['title'], url, body, True)
                 print(f'Exported {name} / {chapter["title"]}', flush=True)
-            index_body = link(READING_ROOT, '← 返回 SchoolNote') + '<p>按章节在线阅读课程笔记。</p>'
+            index_body = link(READING_ROOT, '← 返回 SchoolNote') + '<p class="section-intro">' + COURSE_TOPICS[course]['description'] + ' 按章节选择，直接在线阅读。</p>'
             if course == 'western-philosophy':
                 for language, label in [('zh', '中文笔记'), ('en', 'English notes')]:
-                    index_body += '<h2>' + label + '</h2><ol>' + ''.join('<li>' + link(c['url'], c['title']) + '</li>' for c in chapters if c['slug'].startswith(language + '/')) + '</ol>'
+                    index_body += '<h2>' + label + '</h2><ol class="chapter-list">' + ''.join('<li>' + link(c['url'], c['title']) + '</li>' for c in chapters if c['slug'].startswith(language + '/')) + '</ol>'
             else:
-                index_body += '<ol>' + ''.join('<li>' + link(c['url'], c['title']) + '</li>' for c in chapters) + '</ol>'
+                index_body += '<ol class="chapter-list">' + ''.join('<li>' + link(c['url'], c['title']) + '</li>' for c in chapters) + '</ol>'
             write_page(pages / course / 'index.html', name, course_url, index_body)
             catalog.append({'slug': course, 'title': name, 'semester': semester, 'url': course_url,
                             'chapters': [{k: v for k, v in c.items() if k != 'order'} for c in chapters]})

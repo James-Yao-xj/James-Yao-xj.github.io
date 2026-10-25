@@ -78,19 +78,19 @@
       "chapters": [
         {
           "slug": "lesson-1",
-          "title": "第 1 讲",
+          "title": "第 1 讲：课程导论与 Floyd 最短路",
           "source": "Semester3/DataStructureAlgorithm/Lesson1_IntroAndFloyd/Lesson1.typ",
           "url": "/learning/school-note/data-structures/lesson-1/"
         },
         {
           "slug": "lesson-2",
-          "title": "第 2 讲",
+          "title": "第 2 讲：兔子与樱花：程序设计练习",
           "source": "Semester3/DataStructureAlgorithm/Lesson2/Lesson2.typ",
           "url": "/learning/school-note/data-structures/lesson-2/"
         },
         {
           "slug": "lesson-3",
-          "title": "第 3 讲",
+          "title": "第 3 讲：线性表、栈与队列",
           "source": "Semester3/DataStructureAlgorithm/Lesson3/Lesson3.typ",
           "url": "/learning/school-note/data-structures/lesson-3/"
         }
@@ -104,31 +104,31 @@
       "chapters": [
         {
           "slug": "lesson-1",
-          "title": "第 1 讲",
+          "title": "第 1 讲：集合与基本运算",
           "source": "Semester3/IDM/Lesson1.typ",
           "url": "/learning/school-note/discrete-mathematics/lesson-1/"
         },
         {
           "slug": "lesson-2",
-          "title": "第 2 讲",
+          "title": "第 2 讲：集合运算与有穷集计数",
           "source": "Semester3/IDM/Lesson2.typ",
           "url": "/learning/school-note/discrete-mathematics/lesson-2/"
         },
         {
           "slug": "lesson-3",
-          "title": "第 3 讲",
+          "title": "第 3 讲：笛卡尔积与二元关系",
           "source": "Semester3/IDM/Lesson3.typ",
           "url": "/learning/school-note/discrete-mathematics/lesson-3/"
         },
         {
           "slug": "lesson-4",
-          "title": "第 4 讲",
+          "title": "第 4 讲：关系的性质与闭包",
           "source": "Semester3/IDM/Lesson4.typ",
           "url": "/learning/school-note/discrete-mathematics/lesson-4/"
         },
         {
           "slug": "lesson-5",
-          "title": "第 5 讲",
+          "title": "第 5 讲：函数的定义与性质",
           "source": "Semester3/IDM/Lesson5.typ",
           "url": "/learning/school-note/discrete-mathematics/lesson-5/"
         }
@@ -142,37 +142,37 @@
       "chapters": [
         {
           "slug": "lesson-1",
-          "title": "第 1 讲",
+          "title": "第 1 讲：概率论的基本概念",
           "source": "Semester3/ProbabilityTheoryAndStatistics/Lesson1.typ",
           "url": "/learning/school-note/probability/lesson-1/"
         },
         {
           "slug": "lesson-2",
-          "title": "第 2 讲",
+          "title": "第 2 讲：概率公理与条件概率",
           "source": "Semester3/ProbabilityTheoryAndStatistics/Lesson2.typ",
           "url": "/learning/school-note/probability/lesson-2/"
         },
         {
           "slug": "lesson-3",
-          "title": "第 3 讲",
+          "title": "第 3 讲：独立事件与随机变量",
           "source": "Semester3/ProbabilityTheoryAndStatistics/Lesson3.typ",
           "url": "/learning/school-note/probability/lesson-3/"
         },
         {
           "slug": "lesson-5",
-          "title": "第 5 讲",
+          "title": "第 5 讲：期望、方差与离散分布",
           "source": "Semester3/ProbabilityTheoryAndStatistics/Lesson5.typ",
           "url": "/learning/school-note/probability/lesson-5/"
         },
         {
           "slug": "lesson-6",
-          "title": "第 6 讲",
+          "title": "第 6 讲：连续随机变量与分布",
           "source": "Semester3/ProbabilityTheoryAndStatistics/Lesson6.typ",
           "url": "/learning/school-note/probability/lesson-6/"
         },
         {
           "slug": "lesson-7",
-          "title": "第 7 讲",
+          "title": "第 7 讲：多维随机变量与条件期望",
           "source": "Semester3/ProbabilityTheoryAndStatistics/Lesson7.typ",
           "url": "/learning/school-note/probability/lesson-7/"
         }
@@ -186,19 +186,19 @@
       "chapters": [
         {
           "slug": "lesson-1",
-          "title": "第 1 讲",
+          "title": "第 1 讲：经济学的思维方式",
           "source": "Semester3/PrinciplesOfEconomics/Lesson1.typ",
           "url": "/learning/school-note/economics/lesson-1/"
         },
         {
           "slug": "lesson-2",
-          "title": "第 2 讲",
+          "title": "第 2 讲：偏好与选择",
           "source": "Semester3/PrinciplesOfEconomics/Lesson2.typ",
           "url": "/learning/school-note/economics/lesson-2/"
         },
         {
           "slug": "lesson-3",
-          "title": "第 3 讲",
+          "title": "第 3 讲：交换、分工与货币",
           "source": "Semester3/PrinciplesOfEconomics/figures/Lesson3.typ",
           "url": "/learning/school-note/economics/lesson-3/"
         }
@@ -212,25 +212,25 @@
       "chapters": [
         {
           "slug": "lesson-2",
-          "title": "第 2 讲",
+          "title": "第 2 讲：集合列的极限",
           "source": "Semester3/SetTheoryAndGraphTheory/Lesson2.typ",
           "url": "/learning/school-note/set-theory/lesson-2/"
         },
         {
           "slug": "lesson-3",
-          "title": "第 3 讲",
+          "title": "第 3 讲：卡氏积与多元关系",
           "source": "Semester3/SetTheoryAndGraphTheory/Lesson3.typ",
           "url": "/learning/school-note/set-theory/lesson-3/"
         },
         {
           "slug": "lesson-4",
-          "title": "第 4 讲",
+          "title": "第 4 讲：关系的投影与联接",
           "source": "Semester3/SetTheoryAndGraphTheory/Lesson4.typ",
           "url": "/learning/school-note/set-theory/lesson-4/"
         },
         {
           "slug": "lesson-9",
-          "title": "第 9 讲",
+          "title": "第 9 讲：偏序集与 Mirsky 定理",
           "source": "Semester3/SetTheoryAndGraphTheory/Lesson9.typ",
           "url": "/learning/school-note/set-theory/lesson-9/"
         }

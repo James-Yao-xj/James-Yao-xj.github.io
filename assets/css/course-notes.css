@@ -101,3 +101,48 @@
   font-size: 14px;
   line-height: 20px;
 }
+
+/* Keep the article width comfortable and reuse the same outline on mobile. */
+.note-body { min-width: 0; font-size: 18px; line-height: 28px; }
+.note-body p { margin-bottom: 24px; }
+.note-body pre { padding: 16px; border: 1px solid var(--global-border-color); border-radius: 8px; }
+.note-body pre, .note-body pre code { background: var(--global-code-background-color); color: var(--global-code-text-color); font-size: 14px; line-height: 20px; }
+.note-body .note-equation { margin: 24px 0; padding: 12px 0; }
+.note-pagination { display: flex; flex-wrap: wrap; gap: 16px; padding: 24px 0; }
+.note-pagination br { display: none; }
+.note-pagination a { font-size: 14px; line-height: 20px; }
+.note-breadcrumb { font-size: 14px; line-height: 20px; }
+.back-to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 15;
+  padding: 8px 12px;
+  border: 1px solid var(--global-border-color);
+  border-radius: 8px;
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+}
+.back-to-top:hover { border-color: var(--global-link-color); }
+.back-to-top[hidden] { display: none; }
+@media (min-width: 1280px) {
+  .course-note { display: grid; grid-template-columns: minmax(0, 1fr) 192px; gap: 32px; align-items: start; }
+  .note-breadcrumb { grid-column: 1 / -1; }
+  .note-body { grid-column: 1; grid-row: 2; }
+  .note-outline { grid-column: 2; grid-row: 2; position: sticky; top: 96px; max-height: calc(100vh - 128px); overflow-y: auto; }
+  .note-outline .note-toc { border: 0; padding: 0; margin: 0; }
+  .note-outline summary { pointer-events: none; list-style: none; font-size: 14px; line-height: 20px; }
+  .note-outline summary::-webkit-details-marker { display: none; }
+  .note-outline ul { list-style: none; padding: 0; }
+  .note-outline li { margin: 0 0 4px; }
+  .note-outline a { display: block; padding: 4px 8px; color: var(--global-text-color); font-size: 12px; line-height: 16px; text-decoration: none; border-radius: 4px; }
+  .note-outline a.toc-subsection { padding-left: 16px; }
+  .note-outline a:hover, .note-outline a[aria-current="location"] { background: var(--global-footer-bg-color); color: var(--global-link-color); }
+}
+@media (max-width: 639px) {
+  .note-body { font-size: 16px; line-height: 24px; }
+  .back-to-top { right: 16px; bottom: 16px; }
+}

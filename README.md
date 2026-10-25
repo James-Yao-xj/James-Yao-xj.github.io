@@ -37,7 +37,7 @@ _teaching/      # 教学条目
 
 ## 本地预览
 
-需要 Ruby、Bundler 和 Node.js：
+需要 Ruby 和 Bundler：
 
 ```bash
 bundle install
@@ -46,12 +46,7 @@ bundle exec jekyll serve -l -H localhost
 
 浏览器打开 <http://localhost:4000>。修改 `_config.yml` 后需要重启 Jekyll；修改 Markdown、HTML 或样式时通常会自动重建。
 
-如需重新生成压缩后的前端脚本：
-
-```bash
-npm install
-npm run build:js
-```
+全站导航与阅读交互直接使用 `assets/js/site-ui.js`，修改后不需要重新打包前端脚本。
 
 ## 发布
 
@@ -73,3 +68,9 @@ python3 scripts/export_course_notes.py ../PKUcourseNote --revision <源仓库提
 ```
 
 脚本会更新 `_pages/learning/school-note/`、`assets/course-notes/` 和 `_data/course_notes.json`，保留来源版本。Typst 的 HTML 导出仍在实验阶段，更新后需核对导出日志 `local/course-note-export.log`，并检查公式、表格、代码、插图、目录和章节链接，再提交发布。网站发布只需 Jekyll，不需要在访客浏览器中运行 Typst。
+
+## 导航与阅读界面
+
+全站交互使用 `assets/js/site-ui.js`，样式使用 `assets/css/interface.css`；保留原有主题变量和 `theme` 偏好。导航在窄屏下完整展开，支持键盘关闭和焦点循环。笔记的同一份页内目录在桌面显示为侧栏，在窄屏显示为折叠目录。
+
+课程简介和章节主题统一保存在 `_data/course_topics.json`，更新章节主题后重新导出笔记即可同步目录、标题及章节切换链接。

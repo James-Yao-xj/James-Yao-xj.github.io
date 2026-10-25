@@ -1,6 +1,13 @@
 {% include base_path %}
 
 <!-- start custom head snippets -->
+<script>
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark' || (savedTheme !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.dataset.theme = 'dark';
+  }
+</script>
+<link rel="stylesheet" href="{{ base_path }}/assets/css/interface.css"/>
 
 <!-- Support for Academicons -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
