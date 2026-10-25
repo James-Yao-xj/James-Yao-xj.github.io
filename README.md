@@ -15,7 +15,6 @@
 | 长篇自主学习内容 | `learning/` |
 | 博客文章 | `_posts/` |
 | 文章 / 出版物 | `_publications/` |
-| 演讲 | `_talks/` |
 | 教学 | `_teaching/` |
 | PDF 等下载文件 | `files/` |
 | 头像、主页图片、站点图标 | `images/` |
@@ -26,12 +25,11 @@
 _pages/
 ├── site/       # 首页、404、CV 等站点核心页面
 ├── learning/   # Learning、SchoolNote、SelfStudy 入口
-├── sections/   # Publications、Talks、Teaching 栏目入口
+├── sections/   # Publications、Teaching 栏目入口
 └── archives/   # 博客年份、分类、标签归档
 
 _posts/         # 博客正文，文件名格式 YYYY-MM-DD-title.md
 _publications/  # 文章与论文条目
-_talks/         # 演讲条目
 _teaching/      # 教学条目
 ```
 
@@ -57,7 +55,7 @@ npm run build:js
 
 ## 发布
 
-推送到 GitHub 后由 GitHub Pages 自动构建。提交前建议至少检查：首页、Learning、Publications、Talks、Teaching、Blog Posts 和 CV。
+推送到 GitHub 后由 GitHub Pages 自动构建。提交前建议至少检查：首页、Learning、Publications、Teaching、Blog Posts 和 CV。
 
 ## 许可与来源
 
