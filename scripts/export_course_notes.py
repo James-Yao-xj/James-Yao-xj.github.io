@@ -58,9 +58,13 @@ ICS_TITLES = {
     'ICS_知识重点总结': ('summary', 'ICS 知识重点总结'),
 }
 SUPPLEMENTS = {
-    ('data-structures', 'DevEnvironment'): ('development-environment', '开发环境与上机基础'),
-    ('discrete-mathematics', 'NumberTheory'): ('number-theory', '初等数论'),
-    ('economics', 'Optimization'): ('optimization', '习题课：约束优化与 KKT'),
+    ('data-structures', 'DevEnvironment'): ('development-environment', '开发环境与上机基础', 100),
+    ('discrete-mathematics', 'NumberTheory'): ('number-theory', '初等数论', 100),
+    ('economics', 'Optimization'): ('optimization', '习题课：约束优化与 KKT', 100),
+    # Keep these handwritten topics after Lesson4, as in the source main.typ.
+    ('set-theory', 'RelationClosure'): ('relation-closure', '关系闭包', 4.1),
+    ('set-theory', 'EquivalenceAndOrder'): ('equivalence-and-order', '等价关系、划分与偏序', 4.2),
+    ('set-theory', 'Functions'): ('functions', '函数的基本概念', 4.3),
 }
 
 # Preserve content that the HTML exporter does not yet handle by default.
@@ -106,8 +110,8 @@ def chapter_metadata(path, course):
         number = re.search(r'\d+', path.stem)
         return slug, title, (int(number[0]) if number else 100, path.stem)
     if (course, path.stem) in SUPPLEMENTS:
-        slug, title = SUPPLEMENTS[(course, path.stem)]
-        return slug, title, (100, path.stem)
+        slug, title, position = SUPPLEMENTS[(course, path.stem)]
+        return slug, title, (position, path.stem)
     number = int(re.search(r'\d+', path.stem)[0])
     slug = f'lesson-{number}'
     topic = COURSE_TOPICS[course]['topics'][slug]

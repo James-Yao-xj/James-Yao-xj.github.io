@@ -49,13 +49,14 @@
     }
   },
   "set-theory": {
-    "description": "集合列、关系、偏序集与自然数。",
+    "description": "集合、关系、函数、偏序集与自然数。",
     "topics": {
       "lesson-2": "集合列的极限",
       "lesson-3": "卡氏积与多元关系",
       "lesson-4": "关系的投影与联接",
       "lesson-9": "偏序集与 Mirsky 定理",
-      "lesson-10": "自然数与递归定义"
+      "lesson-10": "自然数与递归定义",
+      "lesson-1": "集合基础与集合运算"
     }
   },
   "western-philosophy": {

@@ -1,6 +1,6 @@
 {
   "repository": "https://github.com/James-Yao-xj/PKUcourseNote",
-  "revision": "ef61a45763233d8df324655cc9fd30cee47cf275",
+  "revision": "ce85458720f9cae63e9b164b94a49e2fb5aaaab8",
   "courses": [
     {
       "slug": "ics",
@@ -307,6 +307,12 @@
       "url": "/learning/school-note/set-theory/",
       "chapters": [
         {
+          "slug": "lesson-1",
+          "title": "第 1 讲：集合基础与集合运算",
+          "source": "Semester3/SetTheoryAndGraphTheory/Lesson1.typ",
+          "url": "/learning/school-note/set-theory/lesson-1/"
+        },
+        {
           "slug": "lesson-2",
           "title": "第 2 讲：集合列的极限",
           "source": "Semester3/SetTheoryAndGraphTheory/Lesson2.typ",
@@ -323,6 +329,24 @@
           "title": "第 4 讲：关系的投影与联接",
           "source": "Semester3/SetTheoryAndGraphTheory/Lesson4.typ",
           "url": "/learning/school-note/set-theory/lesson-4/"
+        },
+        {
+          "slug": "relation-closure",
+          "title": "关系闭包",
+          "source": "Semester3/SetTheoryAndGraphTheory/RelationClosure.typ",
+          "url": "/learning/school-note/set-theory/relation-closure/"
+        },
+        {
+          "slug": "equivalence-and-order",
+          "title": "等价关系、划分与偏序",
+          "source": "Semester3/SetTheoryAndGraphTheory/EquivalenceAndOrder.typ",
+          "url": "/learning/school-note/set-theory/equivalence-and-order/"
+        },
+        {
+          "slug": "functions",
+          "title": "函数的基本概念",
+          "source": "Semester3/SetTheoryAndGraphTheory/Functions.typ",
+          "url": "/learning/school-note/set-theory/functions/"
         },
         {
           "slug": "lesson-9",
