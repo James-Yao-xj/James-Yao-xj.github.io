@@ -20,3 +20,13 @@ author_profile: true
   {% endif %}{% endfor %}
 </ul>
 {% endfor %}
+
+<h2>课件索引</h2>
+<ul class="course-list">
+  {% for resource in site.data.course_notes.resources %}
+  <li><a class="course-entry" href="{{ site.baseurl }}{{ resource.url }}">
+    <span class="course-entry__text"><strong>{{ resource.title }}</strong><span class="course-entry__description">按课件名称查找对应章节，并查看本次笔记勘误。</span></span>
+    <span class="course-count">在线查看<span aria-hidden="true">→</span></span>
+  </a></li>
+  {% endfor %}
+</ul>

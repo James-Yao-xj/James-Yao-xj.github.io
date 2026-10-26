@@ -1,6 +1,6 @@
 {
   "repository": "https://github.com/James-Yao-xj/PKUcourseNote",
-  "revision": "11049cef6fc03b1f052e072ba44e063195d6d007",
+  "revision": "ef61a45763233d8df324655cc9fd30cee47cf275",
   "courses": [
     {
       "slug": "ics",
@@ -51,10 +51,34 @@
           "url": "/learning/school-note/ics/lesson-6/"
         },
         {
+          "slug": "lesson-7",
+          "title": "第七讲：数组、结构体与浮点指令",
+          "source": "Semester3/ICS/Chapter3/Lesson7.typ",
+          "url": "/learning/school-note/ics/lesson-7/"
+        },
+        {
+          "slug": "lesson-8",
+          "title": "第八讲：联合体、地址空间与缓冲区溢出",
+          "source": "Semester3/ICS/Chapter3/Lesson8.typ",
+          "url": "/learning/school-note/ics/lesson-8/"
+        },
+        {
           "slug": "lesson-9",
           "title": "第九讲：处理器架构与逻辑设计",
           "source": "Semester3/ICS/Chapter4/Lesson9.typ",
           "url": "/learning/school-note/ics/lesson-9/"
+        },
+        {
+          "slug": "lesson-10",
+          "title": "第十讲：SEQ 顺序实现",
+          "source": "Semester3/ICS/Chapter4/Lesson10.typ",
+          "url": "/learning/school-note/ics/lesson-10/"
+        },
+        {
+          "slug": "lesson-11",
+          "title": "第十一讲：流水线与冒险处理",
+          "source": "Semester3/ICS/Chapter4/Lesson11.typ",
+          "url": "/learning/school-note/ics/lesson-11/"
         },
         {
           "slug": "bomb-lab",
@@ -67,6 +91,12 @@
           "title": "ICS 知识重点总结",
           "source": "Semester3/ICS/ICS_知识重点总结.typ",
           "url": "/learning/school-note/ics/summary/"
+        },
+        {
+          "slug": "lab-guide",
+          "title": "实验与浮点讨论课",
+          "source": "Semester3/ICS/LabGuide.typ",
+          "url": "/learning/school-note/ics/lab-guide/"
         }
       ]
     },
@@ -93,6 +123,30 @@
           "title": "第 3 讲：线性表、栈与队列",
           "source": "Semester3/DataStructureAlgorithm/Lesson3/Lesson3.typ",
           "url": "/learning/school-note/data-structures/lesson-3/"
+        },
+        {
+          "slug": "lesson-4",
+          "title": "第 4 讲：串与 KMP 模式匹配",
+          "source": "Semester3/DataStructureAlgorithm/Lesson4/Lesson4.typ",
+          "url": "/learning/school-note/data-structures/lesson-4/"
+        },
+        {
+          "slug": "lesson-5",
+          "title": "第 5 讲：二叉树、堆与 Huffman 编码",
+          "source": "Semester3/DataStructureAlgorithm/Lesson5/Lesson5.typ",
+          "url": "/learning/school-note/data-structures/lesson-5/"
+        },
+        {
+          "slug": "lesson-6",
+          "title": "第 6 讲：树、森林与并查集",
+          "source": "Semester3/DataStructureAlgorithm/Lesson6/Lesson6.typ",
+          "url": "/learning/school-note/data-structures/lesson-6/"
+        },
+        {
+          "slug": "development-environment",
+          "title": "开发环境与上机基础",
+          "source": "Semester3/DataStructureAlgorithm/DevEnvironment.typ",
+          "url": "/learning/school-note/data-structures/development-environment/"
         }
       ]
     },
@@ -131,6 +185,12 @@
           "title": "第 5 讲：函数的定义与性质",
           "source": "Semester3/IDM/Lesson5.typ",
           "url": "/learning/school-note/discrete-mathematics/lesson-5/"
+        },
+        {
+          "slug": "number-theory",
+          "title": "初等数论",
+          "source": "Semester3/IDM/NumberTheory.typ",
+          "url": "/learning/school-note/discrete-mathematics/number-theory/"
         }
       ]
     },
@@ -175,6 +235,18 @@
           "title": "第 7 讲：多维随机变量与条件期望",
           "source": "Semester3/ProbabilityTheoryAndStatistics/Lesson7.typ",
           "url": "/learning/school-note/probability/lesson-7/"
+        },
+        {
+          "slug": "lesson-8",
+          "title": "第 8 讲：联合连续分布与二维变换",
+          "source": "Semester3/ProbabilityTheoryAndStatistics/Lesson8.typ",
+          "url": "/learning/school-note/probability/lesson-8/"
+        },
+        {
+          "slug": "lesson-9",
+          "title": "第 9 讲：多维高斯分布与协方差矩阵",
+          "source": "Semester3/ProbabilityTheoryAndStatistics/Lesson9.typ",
+          "url": "/learning/school-note/probability/lesson-9/"
         }
       ]
     },
@@ -199,8 +271,32 @@
         {
           "slug": "lesson-3",
           "title": "第 3 讲：交换、分工与货币",
-          "source": "Semester3/PrinciplesOfEconomics/figures/Lesson3.typ",
+          "source": "Semester3/PrinciplesOfEconomics/Lesson3.typ",
           "url": "/learning/school-note/economics/lesson-3/"
+        },
+        {
+          "slug": "lesson-4",
+          "title": "第 4 讲：需求、弹性与消费者选择",
+          "source": "Semester3/PrinciplesOfEconomics/Lesson4.typ",
+          "url": "/learning/school-note/economics/lesson-4/"
+        },
+        {
+          "slug": "lesson-5",
+          "title": "第 5 讲：生产与供给曲线",
+          "source": "Semester3/PrinciplesOfEconomics/Lesson5.typ",
+          "url": "/learning/school-note/economics/lesson-5/"
+        },
+        {
+          "slug": "lesson-6",
+          "title": "第 6 讲：供求与市场均衡",
+          "source": "Semester3/PrinciplesOfEconomics/Lesson6.typ",
+          "url": "/learning/school-note/economics/lesson-6/"
+        },
+        {
+          "slug": "optimization",
+          "title": "习题课：约束优化与 KKT",
+          "source": "Semester3/PrinciplesOfEconomics/Optimization.typ",
+          "url": "/learning/school-note/economics/optimization/"
         }
       ]
     },
@@ -233,6 +329,12 @@
           "title": "第 9 讲：偏序集与 Mirsky 定理",
           "source": "Semester3/SetTheoryAndGraphTheory/Lesson9.typ",
           "url": "/learning/school-note/set-theory/lesson-9/"
+        },
+        {
+          "slug": "lesson-10",
+          "title": "第 10 讲：自然数与递归定义",
+          "source": "Semester3/SetTheoryAndGraphTheory/Lesson10.typ",
+          "url": "/learning/school-note/set-theory/lesson-10/"
         }
       ]
     },
@@ -399,6 +501,17 @@
           "url": "/learning/school-note/western-philosophy/zh/kripke/"
         }
       ]
+    }
+  ],
+  "aliases": {
+    "Semester3/PrinciplesOfEconomics/figures/Lesson3.typ": "Semester3/PrinciplesOfEconomics/Lesson3.typ"
+  },
+  "resources": [
+    {
+      "slug": "slide-map",
+      "title": "课件与笔记对应表",
+      "source": "Semester3/课件对应表.typ",
+      "url": "/learning/school-note/slide-map/"
     }
   ]
 }

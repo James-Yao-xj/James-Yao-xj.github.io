@@ -48,9 +48,19 @@ ICS_TITLES = {
     'Lesson4': ('lesson-4', '第四讲：机器级程序基础'),
     'Lesson5': ('lesson-5', '第五讲：控制'),
     'Lesson6': ('lesson-6', '第六讲：过程'),
+    'Lesson7': ('lesson-7', '第七讲：数组、结构体与浮点指令'),
+    'Lesson8': ('lesson-8', '第八讲：联合体、地址空间与缓冲区溢出'),
     'Lesson9': ('lesson-9', '第九讲：处理器架构与逻辑设计'),
+    'Lesson10': ('lesson-10', '第十讲：SEQ 顺序实现'),
+    'Lesson11': ('lesson-11', '第十一讲：流水线与冒险处理'),
+    'LabGuide': ('lab-guide', '实验与浮点讨论课'),
     'BombLab': ('bomb-lab', 'Bomb Lab：汇编分析与调试'),
     'ICS_知识重点总结': ('summary', 'ICS 知识重点总结'),
+}
+SUPPLEMENTS = {
+    ('data-structures', 'DevEnvironment'): ('development-environment', '开发环境与上机基础'),
+    ('discrete-mathematics', 'NumberTheory'): ('number-theory', '初等数论'),
+    ('economics', 'Optimization'): ('optimization', '习题课：约束优化与 KKT'),
 }
 
 # Preserve content that the HTML exporter does not yet handle by default.
@@ -95,6 +105,9 @@ def chapter_metadata(path, course):
         slug, title = ICS_TITLES[path.stem]
         number = re.search(r'\d+', path.stem)
         return slug, title, (int(number[0]) if number else 100, path.stem)
+    if (course, path.stem) in SUPPLEMENTS:
+        slug, title = SUPPLEMENTS[(course, path.stem)]
+        return slug, title, (100, path.stem)
     number = int(re.search(r'\d+', path.stem)[0])
     slug = f'lesson-{number}'
     topic = COURSE_TOPICS[course]['topics'][slug]
@@ -160,11 +173,57 @@ def clean_html(document, image_assets):
     return result, ''.join(outline)
 
 
+def compile_source(staging, source, output, image_assets):
+    """Compile one source and return its HTML body and section outline."""
+    wrapper = staging / '.export.typ'
+    wrapper.write_text(PRELUDE + '#include ' + json.dumps('/' + source, ensure_ascii=False))
+    result = subprocess.run(['typst', 'compile', '--features', 'html', '--root', str(staging),
+                             str(wrapper), str(output), '--diagnostic-format', 'short'],
+                            capture_output=True, text=True)
+    with (SITE / 'local/course-note-export.log').open('a', encoding='utf-8') as stream:
+        stream.write(source + '\n' + result.stderr + '\n')
+    result.check_returncode()
+    return clean_html(output.read_text(), image_assets)
+
+
+def link_slide_map(content, catalog, aliases):
+    """Link note paths within each course section of the slide index.
+
+    Course context is required because several courses use Lesson1.typ.
+    """
+    document = html.fragment_fromstring(content, create_parent='div')
+    routes_by_title = {}
+    for folder, course, title, semester in COURSES:
+        chapters = next(item['chapters'] for item in catalog if item['slug'] == course)
+        routes = {chapter['source'][len(folder) + 1:]: chapter['url'] for chapter in chapters}
+        targets = {chapter['source']: chapter['url'] for chapter in chapters}
+        for alias, target in aliases.items():
+            if target in targets:
+                routes[alias[len(folder) + 1:]] = targets[target]
+        routes_by_title[title] = routes
+    routes = {}
+    for child in list(document):
+        if child.tag == 'h2':
+            title = re.sub(r'^\d+\.\s*', '', child.text_content())
+            routes = routes_by_title.get(title, {})
+        elif child.tag == 'p' and routes and not child.xpath('.//a'):
+            pattern = '|'.join(re.escape(path) for path in sorted(routes, key=len, reverse=True))
+            pattern = r'(?<![\w./])(?:' + pattern + r')(?![\w./])'
+            paragraph = etree.tostring(child, encoding='unicode', method='html')
+            linked = re.sub(pattern, lambda match: link(routes[match[0]], match[0]), paragraph)
+            document.replace(child, html.fragment_fromstring(linked))
+    return ''.join(etree.tostring(child, encoding='unicode', method='html') for child in document).replace('{{%20site.baseurl%20}}', '{{ site.baseurl }}')
+
+
 def export(source, revision):
     """Compile all chapters, then write course indexes and the source catalog."""
     pages = SITE / '_pages/learning/school-note'
     assets = {}
     catalog = []
+    aliases = {}
+    log = SITE / 'local/course-note-export.log'
+    log.parent.mkdir(exist_ok=True)
+    log.write_text('')
     with tempfile.TemporaryDirectory(prefix='course-html-') as temporary:
         staging = Path(temporary) / 'source'
         prepare_sources(source, staging)
@@ -173,24 +232,20 @@ def export(source, revision):
             for path in (staging / folder).rglob('*.typ'):
                 if path.name == 'main.typ':
                     continue
+                # A forwarding source must not create a second chapter URL.
+                forwarded = re.fullmatch(r'\s*#include\s+"([^"]+)"\s*', path.read_text())
+                if forwarded:
+                    target = (path.parent / forwarded[1]).resolve().relative_to(staging.resolve())
+                    aliases[path.relative_to(staging).as_posix()] = target.as_posix()
+                    continue
                 slug, title, order = chapter_metadata(path, course)
                 chapters.append({'slug': slug, 'title': title, 'order': order,
                                  'source': path.relative_to(staging).as_posix()})
             chapters.sort(key=lambda item: item['order'])
             course_url = READING_ROOT + course + '/'
             for index, chapter in enumerate(chapters):
-                wrapper = staging / '.export.typ'
-                wrapper.write_text(PRELUDE + '#include ' + json.dumps('/' + chapter['source'], ensure_ascii=False))
                 output = Path(temporary) / 'chapter.html'
-                result = subprocess.run(['typst', 'compile', '--features', 'html', '--root', str(staging),
-                                         str(wrapper), str(output), '--diagnostic-format', 'short'],
-                                        capture_output=True, text=True, check=True)
-                # Keep diagnostics for review without embedding them into the site.
-                log = SITE / 'local/course-note-export.log'
-                log.parent.mkdir(exist_ok=True)
-                with log.open('a', encoding='utf-8') as stream:
-                    stream.write(chapter['source'] + '\n' + result.stderr + '\n')
-                content, outline = clean_html(output.read_text(), assets)
+                content, outline = compile_source(staging, chapter['source'], output, assets)
                 url = course_url + chapter['slug'] + '/'
                 chapter['url'] = url
                 crumb = '<nav aria-label="笔记导航">' + link(READING_ROOT, 'SchoolNote') + ' · ' + link(course_url, name) + '</nav>'
@@ -220,11 +275,23 @@ def export(source, revision):
             write_page(pages / course / 'index.html', name, course_url, index_body)
             catalog.append({'slug': course, 'title': name, 'semester': semester, 'url': course_url,
                             'chapters': [{k: v for k, v in c.items() if k != 'order'} for c in chapters]})
+        resource = {'slug': 'slide-map', 'title': '课件与笔记对应表',
+                    'source': 'Semester3/课件对应表.typ', 'url': READING_ROOT + 'slide-map/'}
+        content, outline = compile_source(staging, resource['source'], Path(temporary) / 'slide-map.html', assets)
+        breadcrumb = '<nav aria-label="笔记导航">' + link(READING_ROOT, 'SchoolNote') + ' · 课件与笔记对应表</nav>'
+        toc = '<details class="note-toc"><summary>本页目录</summary><ul>' + outline + '</ul></details>'
+        content = link_slide_map(content, catalog, aliases)
+        source_link = '<p class="note-source"><a href="' + SOURCE_REPO + '/blob/' + revision + '/' + quote(resource['source']) + '">查看原始笔记</a></p>'
+        body = '<div class="course-note">' + breadcrumb + toc + content + source_link + '</div>'
+        body = '{% raw %}' + body + '{% endraw %}'
+        body = body.replace('{{ site.baseurl }}', '{% endraw %}{{ site.baseurl }}{% raw %}')
+        write_page(pages / 'slide-map.html', resource['title'], resource['url'], body, True)
     for path, content in assets.items():
         target = SITE / path
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(content)
-    data = {'repository': SOURCE_REPO, 'revision': revision, 'courses': catalog}
+    data = {'repository': SOURCE_REPO, 'revision': revision, 'courses': catalog,
+            'aliases': aliases, 'resources': [resource]}
     (SITE / '_data/course_notes.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
     print(f'Exported {sum(len(c["chapters"]) for c in catalog)} chapters in {len(catalog)} courses.', flush=True)
 
