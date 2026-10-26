@@ -1,0 +1,27 @@
+---
+layout: single
+title: "Project"
+permalink: /project/
+author_profile: true
+excerpt: "个人项目与工具，记录学习管理方面的实践。"
+---
+
+<p class="section-intro">这里记录我的项目与实践。</p>
+
+{% for project in site.data.projects %}
+<section class="project-entry" aria-labelledby="{{ project.id }}">
+  <h2 id="{{ project.id }}">{{ project.name }}</h2>
+  <p class="project-category">{{ project.category }}</p>
+  <p>{{ project.description }}</p>
+  <div class="project-actions">
+    {% if project.repository_public %}
+      <a class="text-action" href="{{ project.repository }}">查看 GitHub 仓库 <span aria-hidden="true">↗</span></a>
+    {% else %}
+      <span class="project-status">源码暂未公开</span>
+    {% endif %}
+    {% if project.homepage %}
+      <a class="text-action" href="{{ project.homepage }}">访问项目 <span aria-hidden="true">↗</span></a>
+    {% endif %}
+  </div>
+</section>
+{% endfor %}

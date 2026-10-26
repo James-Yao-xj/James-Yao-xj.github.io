@@ -201,6 +201,12 @@ html[data-theme="dark"] .theme-moon { display: block; }
 .blog-empty p { margin-bottom: 24px; }
 .text-action { display: inline-flex; align-items: center; gap: 12px; font-weight: 600; }
 
+.project-entry { max-width: 76ch; margin-bottom: 40px; }
+.project-category, .project-status { font-size: 14px; line-height: 20px; }
+.project-category { margin-bottom: 16px !important; }
+.project-actions { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; }
+.project-status { padding: 8px 12px; border: 1px solid var(--global-border-color); border-radius: 8px; }
+
 @media (max-width: 1079px) {
   .site-navigation { gap: 16px; }
   .site-controls { order: 0; }

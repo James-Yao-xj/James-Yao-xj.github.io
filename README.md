@@ -8,6 +8,7 @@
 | --- | --- |
 | 姓名、简介、头像、社交链接、站点设置 | `_config.yml` |
 | 顶部导航 | `_data/navigation.yml` |
+| 项目介绍与仓库入口 | `_data/projects.yml`、`_pages/sections/project.html` |
 | 主页 | `_pages/site/home.md` |
 | 中英文简历 | `_pages/site/cv.md` |
 | 简历样式 | `assets/css/cv-layout.scss`、`tokens.css` |
@@ -25,7 +26,7 @@
 _pages/
 ├── site/       # 首页、404、CV 等站点核心页面
 ├── learning/   # Learning、SchoolNote、SelfStudy 入口
-├── sections/   # Publications、Teaching 栏目入口
+├── sections/   # Publications、Teaching、Project 栏目入口
 └── archives/   # 博客年份、分类、标签归档
 
 _posts/         # 博客正文，文件名格式 YYYY-MM-DD-title.md

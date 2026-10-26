@@ -1,0 +1,5 @@
+- name: "DailyStudyPlan"
+  id: "daily-study-plan"
+  category: "学习管理"
+  description: "围绕每日学习计划、完成记录与复盘组织学习过程的个人项目，逐步整理为个人学习看板。"
+  repository_public: false
