@@ -1,0 +1,25 @@
+/* The selector uses native keyboard and screen reader controls. */
+.language-select {
+  max-width: 128px;
+  height: 40px;
+  padding: 8px;
+  border: 1px solid var(--global-border-color, #d6d6d6);
+  border-radius: 8px;
+  background: var(--global-bg-color, #ffffff);
+  color: var(--global-text-color, #181818);
+  font: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.language-select:hover { background: var(--global-footer-bg-color, #f2f2f2); }
+.language-select:focus-visible { outline: 2px solid var(--global-link-color, #0057a8); outline-offset: 4px; }
+
+.study-toolbar { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; max-width: 960px; margin: 24px auto; padding: 0 24px; }
+.study-toolbar .language-select { margin-inline-start: auto; }
+.study-toolbar a { font-size: 14px; }
+.study-toolbar select { width: auto; }
+html[dir="rtl"] [data-original-language] .src,
+html[dir="rtl"] [data-original-language] .next { direction: rtl; }
+@media (max-width: 639px) { .study-toolbar { padding: 0 16px; } }
+@media print { .study-toolbar { display: none; } }

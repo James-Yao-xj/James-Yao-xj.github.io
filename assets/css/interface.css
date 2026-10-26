@@ -207,7 +207,7 @@ html[data-theme="dark"] .theme-moon { display: block; }
 .project-actions { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; }
 .project-status { padding: 8px 12px; border: 1px solid var(--global-border-color); border-radius: 8px; }
 
-@media (max-width: 1079px) {
+@media (max-width: 1279px) {
   .site-navigation { gap: 16px; }
   .site-controls { order: 0; }
   .menu-toggle { display: inline-flex; }
@@ -267,3 +267,22 @@ html[data-theme="dark"] .theme-moon { display: block; }
 @media (max-width: 924px) {
   #main > .page__related { grid-column: 1; }
 }
+
+[dir="rtl"] .site-controls { margin-left: 0; margin-inline-start: auto; }
+[dir="rtl"] .primary-links { margin-left: 0; margin-inline-start: auto; }
+[dir="rtl"] .course-count { text-align: end; }
+[dir="rtl"] .page__content ul, [dir="rtl"] .page__content ol { padding-left: 0; padding-inline-start: 24px; }
+[dir="rtl"] .note-body ul, [dir="rtl"] .note-body ol { padding-left: 24px; padding-inline-start: 24px; }
+[dir="rtl"] .back-to-top { right: auto; left: 24px; }
+[dir="rtl"] .resume-contact { direction: ltr; }
+[dir="rtl"] .resume-entry__head, [dir="rtl"] .award-list > div { text-align: start; }
+@media (max-width: 639px) {
+  .site-navigation { flex-wrap: wrap; }
+  .site-brand { flex: 1 1 100%; }
+  .site-controls { margin: 0; width: 100%; justify-content: flex-end; }
+  .language-select { margin-inline-end: auto; }
+  [dir="rtl"] .site-controls { margin: 0; }
+  [dir="rtl"] .back-to-top { left: 16px; }
+  .navigation-open .primary-links { inset-block-start: 128px; }
+}
+.note-language-notice { font-size: 14px; line-height: 20px; color: var(--global-text-color); }

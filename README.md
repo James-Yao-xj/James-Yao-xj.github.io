@@ -75,3 +75,19 @@ python3 scripts/export_course_notes.py ../PKUcourseNote --revision <源仓库提
 全站交互使用 `assets/js/site-ui.js`，样式使用 `assets/css/interface.css`；保留原有主题变量和 `theme` 偏好。导航在窄屏下完整展开，支持键盘关闭和焦点循环。笔记的同一份页内目录在桌面显示为侧栏，在窄屏显示为折叠目录。
 
 课程简介和章节主题统一保存在 `_data/course_topics.json`，更新章节主题后重新导出笔记即可同步目录、标题及章节切换链接。
+
+### Site languages
+
+The header language control supports Simplified Chinese, English, Traditional Chinese,
+French, and Arabic. The selection is saved as `site-language` in local storage;
+`?lang=fr` (or another supported locale) opens a page in a specific language.
+Arabic uses right to left interface layout. Notes keep their original language and
+left to right article layout, including formulas and code.
+
+`assets/js/site-translations.js` contains five strings per row, in the order
+`zh-Hans`, `en`, `zh-Hant`, `fr`, `ar`. Chinese and English source phrases identify
+existing text nodes. `siteTranslationAliases` handles older section names.
+Keep the original phrase when editing a translation, or update its matching source
+text as well. Course lecture numbers and note counts use shared label templates.
+New interface or introduction copy needs a translation row. Original note content
+is excluded by `.course-note` or `data-original-language`.
