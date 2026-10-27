@@ -2078,6 +2078,55 @@ window.siteTranslations = [
     "這裡會記錄較完整的學習心得、專案思考與閱讀筆記。暫時還沒有發布的文章，可以先看看已公開的課程筆記。",
     "Cet espace accueillera des réflexions plus longues sur les études, les projets et les lectures. Aucun article n’a encore été publié ; vous pouvez consulter les notes de cours en attendant.",
     "هذه المساحة مخصصة لتأملات أطول حول الدراسة والمشاريع والقراءة. لم تُنشر مقالات بعد؛ يمكنك تصفح ملاحظات المقررات في الوقت الحالي."
+  ],
+  [
+    "周一，在清华跑步和拍照",
+    "A Monday run and photos at Tsinghua",
+    "週一，在清華跑步和拍照",
+    "Une course et quelques photos à Tsinghua, lundi",
+    "جري وتصوير في جامعة تسينغهوا يوم الاثنين"
+  ],
+  [
+    "校园生活",
+    "Campus life",
+    "校園生活",
+    "Vie sur le campus",
+    "الحياة الجامعية"
+  ],
+  [
+    "周一到清华跑步，顺手拍下了夕阳里的校园。阳光照着草坪、红砖建筑和清华学堂，跑步间隙停下来按下快门。把这四张照片留在这里，记下这一段有运动也有风景的傍晚。",
+    "I went for a run at Tsinghua on Monday and took a few photos of the campus in the evening light. The sun fell on the lawn, the red brick buildings, and Tsinghua School. I paused between stretches of the run to capture these four scenes.",
+    "週一到清華跑步，順手拍下了夕陽裡的校園。陽光照著草坪、紅磚建築和清華學堂，跑步間隙停下來按下快門。把這四張照片留在這裡，記下這段有運動也有風景的傍晚。",
+    "Lundi, je suis allé courir à Tsinghua et j’en ai profité pour photographier le campus à la lumière du soir. Le soleil éclairait la pelouse, les bâtiments de brique rouge et le bâtiment historique de Tsinghua. Entre deux moments de course, je me suis arrêté pour saisir ces quatre vues.",
+    "ذهبت يوم الاثنين للجري في جامعة تسينغهوا، والتقطت بعض الصور للحرم الجامعي في ضوء المساء. أضاءت الشمس العشب والمباني المبنية من الطوب الأحمر ومبنى مدرسة تسينغهوا. توقفت بين فترات الجري لالتقاط هذه المشاهد الأربعة."
+  ],
+  [
+    "夕阳下的草坪与圆顶建筑",
+    "Lawn and domed building in the evening sun",
+    "夕陽下的草坪與圓頂建築",
+    "Pelouse et bâtiment au dôme dans la lumière du soir",
+    "العشب ومبنى ذو قبة في ضوء الغروب"
+  ],
+  [
+    "夕阳下的清华学堂正面",
+    "Front of Tsinghua School in the evening sun",
+    "夕陽下的清華學堂正面",
+    "Façade de l’École de Tsinghua au soleil couchant",
+    "واجهة مبنى مدرسة تسينغهوا عند الغروب"
+  ],
+  [
+    "暖光照亮的红砖建筑",
+    "Red brick building lit by warm sunlight",
+    "暖光照亮的紅磚建築",
+    "Bâtiment de brique rouge éclairé par une lumière chaude",
+    "مبنى من الطوب الأحمر تضيئه أشعة الشمس الدافئة"
+  ],
+  [
+    "夕阳下的清华学堂与周围树木",
+    "Tsinghua School and surrounding trees at sunset",
+    "夕陽下的清華學堂與周圍樹木",
+    "L’École de Tsinghua et les arbres alentour au coucher du soleil",
+    "مبنى مدرسة تسينغهوا والأشجار المحيطة به عند الغروب"
   ]
 ];
 window.siteTranslationAliases = {
