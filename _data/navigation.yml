@@ -13,6 +13,9 @@ main:
   - title: "Learning"
     url: /learning/
 
+  - title: "News"
+    url: /news/
+
   - title: "Blog Posts"
     url: /year-archive/
     

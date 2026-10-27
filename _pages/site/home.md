@@ -21,3 +21,16 @@ I’m also a big fan of aviation. In my spare time, I often go near airports to 
 
 I’ll keep working on making this page more beautiful over time. For now, here’s a photo as a small greeting. Thanks so much for visiting!
 ![This is James!](/images/HomePage.png)
+
+{% if site.news.size > 0 %}
+<section class="home-news" aria-labelledby="home-news-title">
+  <h2 id="home-news-title">最近动态</h2>
+  {% assign recent_news = site.news | sort: 'date' | reverse %}
+  <ul>
+    {% for item in recent_news limit: 2 %}
+      <li><time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%Y.%m.%d' }}</time><a href="{{ site.baseurl }}/news/#{{ item.slug }}">{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <a class="text-action" href="{{ site.baseurl }}/news/">查看全部动态 <span aria-hidden="true">→</span></a>
+</section>
+{% endif %}

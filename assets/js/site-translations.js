@@ -2029,6 +2029,55 @@ window.siteTranslations = [
     "克里普克",
     "Kripke",
     "كريبكه"
+  ],
+  [
+    "生活动态",
+    "News",
+    "生活動態",
+    "Actualités personnelles",
+    "أخبار شخصية"
+  ],
+  [
+    "学习与项目之外，这里记录校园生活、运动、摄影，以及值得留住的小事。",
+    "Beyond studies and projects, I share moments from campus life, sports, photography, and the little things worth remembering.",
+    "在學習與專案之外，這裡記錄校園生活、運動、攝影，以及值得留住的小事。",
+    "Au-delà des études et des projets, je partage ici des instants de vie sur le campus, de sport, de photographie et les petites choses à garder en mémoire.",
+    "بعيداً عن الدراسة والمشاريع، أسجل هنا لحظات من الحياة الجامعية والرياضة والتصوير، والأشياء الصغيرة التي تستحق التذكر."
+  ],
+  [
+    "最新动态",
+    "Latest updates",
+    "最新動態",
+    "Dernières nouvelles",
+    "آخر المستجدات"
+  ],
+  [
+    "这里暂时没有发布的动态。",
+    "No updates have been published here yet.",
+    "這裡暫時沒有發布的動態。",
+    "Aucune nouvelle n’a encore été publiée ici.",
+    "لم تُنشر أي مستجدات هنا بعد."
+  ],
+  [
+    "最近动态",
+    "Recent updates",
+    "最近動態",
+    "Actualités récentes",
+    "آخر الأخبار"
+  ],
+  [
+    "查看全部动态",
+    "View all updates",
+    "查看所有動態",
+    "Voir toutes les nouvelles",
+    "عرض كل المستجدات"
+  ],
+  [
+    "这里会记录较完整的学习心得、项目思考与阅读笔记。暂时还没有发布的文章，可以先看看已经公开的课程笔记。",
+    "This space is for longer reflections on learning, projects, and reading. No articles have been published yet; you can explore the course notes in the meantime.",
+    "這裡會記錄較完整的學習心得、專案思考與閱讀筆記。暫時還沒有發布的文章，可以先看看已公開的課程筆記。",
+    "Cet espace accueillera des réflexions plus longues sur les études, les projets et les lectures. Aucun article n’a encore été publié ; vous pouvez consulter les notes de cours en attendant.",
+    "هذه المساحة مخصصة لتأملات أطول حول الدراسة والمشاريع والقراءة. لم تُنشر مقالات بعد؛ يمكنك تصفح ملاحظات المقررات في الوقت الحالي."
   ]
 ];
 window.siteTranslationAliases = {

@@ -15,6 +15,7 @@
 | 学习入口和课程笔记入口 | `_pages/learning/` |
 | 长篇自主学习内容 | `learning/` |
 | 博客文章 | `_posts/` |
+| 生活动态 | `_news/`、`_pages/sections/news.html` |
 | 文章 / 出版物 | `_publications/` |
 | 教学 | `_teaching/` |
 | PDF 等下载文件 | `files/` |
@@ -30,6 +31,7 @@ _pages/
 └── archives/   # 博客年份、分类、标签归档
 
 _posts/         # 博客正文，文件名格式 YYYY-MM-DD-title.md
+_news/          # News 动态，按 front matter 中的 date 倒序展示
 _publications/  # 文章与论文条目
 _teaching/      # 教学条目
 ```
@@ -48,6 +50,8 @@ bundle exec jekyll serve -l -H localhost
 浏览器打开 <http://localhost:4000>。修改 `_config.yml` 后需要重启 Jekyll；修改 Markdown、HTML 或样式时通常会自动重建。
 
 全站导航与阅读交互直接使用 `assets/js/site-ui.js`，修改后不需要重新打包前端脚本。
+
+News 页面会自动显示 `_news/` 下的 Markdown 条目，首页会展示最新两条。每条至少填写 `title` 和 `date`；如需照片，可填写 `image`（以 `/images/` 开头的网站路径）和 `image_alt`。正文写在 front matter 后。新动态中的界面文字若需五语切换，请在 `assets/js/site-translations.js` 添加对应译文。
 
 ## 发布
 

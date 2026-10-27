@@ -1,0 +1,29 @@
+---
+layout: single
+title: "News"
+permalink: /news/
+author_profile: true
+news_hero: true
+description: "学习与项目之外，这里记录校园生活、运动、摄影，以及值得留住的小事。"
+---
+
+{% assign recent_news = site.news | sort: 'date' | reverse %}
+<section class="news-feed" aria-labelledby="news-feed-title">
+  <h2 id="news-feed-title">最新动态</h2>
+  {% if recent_news.size > 0 %}
+    <div class="news-feed__items">
+      {% for item in recent_news %}
+        <article class="news-entry" id="{{ item.slug }}">
+          <p class="news-entry__meta"><time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%Y.%m.%d' }}</time>{% if item.category %}<span>{{ item.category }}</span>{% endif %}</p>
+          <h3>{{ item.title }}</h3>
+          <div class="news-entry__body">{{ item.content }}</div>
+          {% if item.image %}
+            <figure><img src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.image_alt | escape }}" loading="lazy"></figure>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="news-empty">这里暂时没有发布的动态。</p>
+  {% endif %}
+</section>
