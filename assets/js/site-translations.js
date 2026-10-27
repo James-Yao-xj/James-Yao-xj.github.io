@@ -2127,6 +2127,20 @@ window.siteTranslations = [
     "夕陽下的清華學堂與周圍樹木",
     "L’École de Tsinghua et les arbres alentour au coucher du soleil",
     "مبنى مدرسة تسينغهوا والأشجار المحيطة به عند الغروب"
+  ],
+  [
+    "周一去清华跑步，顺便记录了夕阳下的校园景色。",
+    "A Monday run at Tsinghua, with a few photos of the campus at sunset.",
+    "週一去清華跑步，順便記錄了夕陽下的校園景色。",
+    "Une course à Tsinghua lundi, avec quelques photos du campus au coucher du soleil.",
+    "جري يوم الاثنين في جامعة تسينغهوا مع صور للحرم الجامعي عند الغروب."
+  ],
+  [
+    "← 返回动态列表",
+    "← Back to all updates",
+    "← 返回動態列表",
+    "← Retour aux actualités",
+    "← العودة إلى جميع الأخبار"
   ]
 ];
 window.siteTranslationAliases = {

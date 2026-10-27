@@ -13,19 +13,20 @@ description: "学习与项目之外，这里记录校园生活、运动、摄影
   {% if recent_news.size > 0 %}
     <div class="news-feed__items">
       {% for item in recent_news %}
-        <article class="news-entry" id="{{ item.slug }}">
-          <p class="news-entry__meta"><time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%Y.%m.%d' }}</time>{% if item.category %}<span>{{ item.category }}</span>{% endif %}</p>
-          <h3>{{ item.title }}</h3>
-          <div class="news-entry__body">{{ item.content }}</div>
-          {% if item.photos %}
-            <div class="news-gallery">
-              {% for photo in item.photos %}
-                <figure><img src="{{ site.baseurl }}{{ photo.image }}" alt="{{ photo.alt | escape }}" loading="lazy"></figure>
-              {% endfor %}
+        <article class="news-card" id="{{ item.slug }}">
+          <a class="news-card__link{% unless item.photos or item.image %} news-card__link--text{% endunless %}" href="{{ item.url | relative_url }}">
+            {% if item.photos %}
+              <img class="news-card__cover" src="{{ site.baseurl }}{{ item.photos.first.image }}" alt="" loading="lazy">
+            {% elsif item.image %}
+              <img class="news-card__cover" src="{{ site.baseurl }}{{ item.image }}" alt="" loading="lazy">
+            {% endif %}
+            <div class="news-card__content">
+              <p class="news-entry__meta"><time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%Y.%m.%d' }}</time>{% if item.category %}<span>{{ item.category }}</span>{% endif %}</p>
+              <h3>{{ item.title }}</h3>
+              <p class="news-card__summary">{{ item.summary | default: item.excerpt | strip_html | truncate: 100 }}</p>
+              <span class="news-card__action">阅读全文 <span aria-hidden="true">→</span></span>
             </div>
-          {% elsif item.image %}
-            <figure><img src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.image_alt | escape }}" loading="lazy"></figure>
-          {% endif %}
+          </a>
         </article>
       {% endfor %}
     </div>

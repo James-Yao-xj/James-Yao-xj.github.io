@@ -51,7 +51,7 @@ bundle exec jekyll serve -l -H localhost
 
 全站导航与阅读交互直接使用 `assets/js/site-ui.js`，修改后不需要重新打包前端脚本。
 
-News 页面会自动显示 `_news/` 下的 Markdown 条目，首页会展示最新两条。每条至少填写 `title` 和 `date`；如需照片，可填写 `photos` 列表，每张照片包含 `image`（以 `/images/` 开头的网站路径）和 `alt`。正文写在 front matter 后。新动态中的文字若需五语切换，请在 `assets/js/site-translations.js` 添加对应译文。
+News 页面按日期展示 `_news/` 下的摘要卡片；点击卡片进入动态详情，首页也会链接最新两条。每条至少填写 `title`、`date` 和 `summary`；如需照片，可填写 `photos` 列表，每张照片包含 `image`（以 `/images/` 开头的网站路径）和 `alt`。完整正文写在 front matter 后。新动态中的文字若需五语切换，请在 `assets/js/site-translations.js` 添加对应译文。
 
 ## 发布
 

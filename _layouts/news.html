@@ -1,0 +1,18 @@
+---
+layout: single
+---
+
+<div class="news-detail">
+  <p class="news-detail__back"><a href="{{ '/news/' | relative_url }}">← 返回动态列表</a></p>
+  <p class="news-entry__meta"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y.%m.%d' }}</time>{% if page.category %}<span>{{ page.category }}</span>{% endif %}</p>
+  <div class="news-entry__body">{{ content }}</div>
+  {% if page.photos %}
+    <div class="news-gallery">
+      {% for photo in page.photos %}
+        <figure><img src="{{ site.baseurl }}{{ photo.image }}" alt="{{ photo.alt | escape }}" loading="lazy"></figure>
+      {% endfor %}
+    </div>
+  {% elsif page.image %}
+    <figure><img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.image_alt | escape }}" loading="lazy"></figure>
+  {% endif %}
+</div>

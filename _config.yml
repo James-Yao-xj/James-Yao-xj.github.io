@@ -109,7 +109,8 @@ kramdown:
 # These settings control the types of collections used by the template
 collections:
   news:
-    output: false
+    output: true
+    permalink: /news/:name/
   teaching:
     output: true
     permalink: /:collection/:path/
@@ -119,6 +120,13 @@ collections:
 
 # These settings control how pages and collections are included in the site
 defaults:
+  # _news
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: news
+      author_profile: true
   # _posts
   - scope:
       path: ""

@@ -2,6 +2,7 @@
 title: "周一，在清华跑步和拍照"
 date: 2026-10-26
 category: "校园生活"
+summary: "周一去清华跑步，顺便记录了夕阳下的校园景色。"
 photos:
   - image: /images/news/2026-10-26-tsinghua-lawn.jpg
     alt: "夕阳下的草坪与圆顶建筑"
