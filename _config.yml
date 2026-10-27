@@ -47,7 +47,7 @@ reader_comments:
   category: "Announcements"
   category_id: "DIC_kwDOS2S_UM4DJu-L"
 visitor_stats:
-  goatcounter_url: false
+  goatcounter_url: "https://yaoxingjian.goatcounter.com"
 atom_feed:
   hide                   : false     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
