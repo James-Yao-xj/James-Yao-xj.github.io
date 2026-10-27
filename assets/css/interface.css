@@ -287,7 +287,7 @@ html[data-theme="dark"] .theme-moon { display: block; }
 }
 .note-language-notice { font-size: 14px; line-height: 20px; color: var(--global-text-color); }
 
-/* The News photograph stays behind the page title in both themes. */
+/* The News photograph stays clear under a theme-aware text overlay. */
 .news-hero {
   position: relative;
   isolation: isolate;
@@ -299,14 +299,14 @@ html[data-theme="dark"] .theme-moon { display: block; }
   margin-bottom: 40px;
   padding: 48px;
   border-radius: 12px;
-  background: #d8ca8f;
+  background: #d4dde2;
 }
 .news-hero::before, .news-hero::after { content: ''; position: absolute; inset: 0; z-index: -1; }
 .news-hero::before {
-  background: url('/images/news/hero-blurred.png') center 52% / cover no-repeat;
+  background: url('/images/news/hero-airport-sunset.jpg') center 58% / cover no-repeat;
 }
-.news-hero::after { background: rgba(255, 255, 255, 0.68); }
-html[data-theme="dark"] .news-hero::after { background: rgba(19, 18, 9, 0.76); }
+.news-hero::after { background: rgba(255, 255, 255, 0.72); }
+html[data-theme="dark"] .news-hero::after { background: rgba(11, 24, 35, 0.68); }
 .news-hero .page__title { max-width: 680px; margin: 0 0 16px; font-size: 36px; line-height: 40px; }
 .news-hero__intro { max-width: 60ch; margin: 0; font-size: 18px; line-height: 28px; }
 .news-feed { max-width: 760px; }
