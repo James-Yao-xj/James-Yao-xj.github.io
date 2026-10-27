@@ -305,7 +305,7 @@ html[data-theme="dark"] .theme-moon { display: block; }
 .news-hero::before {
   background: url('/images/news/hero-airport-sunset.jpg') center 58% / cover no-repeat;
 }
-.news-hero::after { background: rgba(255, 255, 255, 0.72); }
+.news-hero::after { background: rgba(255, 255, 255, 0.58); }
 html[data-theme="dark"] .news-hero::after { background: rgba(11, 24, 35, 0.68); }
 .news-hero .page__title { max-width: 680px; margin: 0 0 16px; font-size: 36px; line-height: 40px; }
 .news-hero__intro { max-width: 60ch; margin: 0; font-size: 18px; line-height: 28px; }
