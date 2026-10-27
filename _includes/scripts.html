@@ -1,5 +1,10 @@
 <script defer src="{{ base_path }}/assets/js/site-translations.js"></script>
 <script defer src="{{ base_path }}/assets/js/site-i18n.js"></script>
 <script defer src="{{ base_path }}/assets/js/site-ui.js"></script>
+{% if site.reader_comments.enabled %}<script defer src="{{ base_path }}/assets/js/site-comments.js"></script>{% endif %}
+{% if site.visitor_stats.goatcounter_url %}
+<script data-goatcounter="{{ site.visitor_stats.goatcounter_url }}/count" async src="https://gc.zgo.at/count.js"></script>
+<script defer src="{{ base_path }}/assets/js/site-visit-count.js"></script>
+{% endif %}
 
 {% include analytics.html %}

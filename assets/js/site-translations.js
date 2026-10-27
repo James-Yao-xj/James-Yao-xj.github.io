@@ -2141,6 +2141,41 @@ window.siteTranslations = [
     "← 返回動態列表",
     "← Retour aux actualités",
     "← العودة إلى جميع الأخبار"
+  ],
+  [
+    "全站访问次数",
+    "Site visits",
+    "全站訪問次數",
+    "Visites du site",
+    "زيارات الموقع"
+  ],
+  [
+    "统计尚未启用",
+    "Counting is not active yet",
+    "統計尚未啟用",
+    "Le compteur n’est pas encore actif",
+    "لم يُفعّل العداد بعد"
+  ],
+  [
+    "读者留言",
+    "Reader comments",
+    "讀者留言",
+    "Commentaires des lecteurs",
+    "تعليقات القراء"
+  ],
+  [
+    "欢迎就本页内容分享想法或提问。",
+    "Share a thought or ask a question about this page.",
+    "歡迎就本頁內容分享想法或提問。",
+    "Partagez une idée ou posez une question sur cette page.",
+    "شارك فكرة أو اطرح سؤالاً حول هذه الصفحة."
+  ],
+  [
+    "留言区正在准备中。",
+    "Comments are being prepared.",
+    "留言區正在準備中。",
+    "L’espace de commentaires est en préparation.",
+    "قسم التعليقات قيد الإعداد."
   ]
 ];
 window.siteTranslationAliases = {

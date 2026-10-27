@@ -53,6 +53,13 @@ bundle exec jekyll serve -l -H localhost
 
 News 页面按日期展示 `_news/` 下的摘要卡片；点击卡片进入动态详情，首页也会链接最新两条。每条至少填写 `title`、`date` 和 `summary`；如需照片，可填写 `photos` 列表，每张照片包含 `image`（以 `/images/` 开头的网站路径）和 `alt`。完整正文写在 front matter 后。新动态中的文字若需五语切换，请在 `assets/js/site-translations.js` 添加对应译文。
 
+## 访问统计与读者留言
+
+全站页脚已预留访问次数，SchoolNote 正文、News 详情和博客正文末尾已预留读者留言。统计与留言目前显示准备状态，不会展示虚构数字。启用方式：
+
+1. 在 [GoatCounter](https://www.goatcounter.com/signup) 创建站点，启用网站上显示计数的选项，再将 `_config.yml` 的 `visitor_stats.goatcounter_url` 改为站点地址，例如 `https://example.goatcounter.com`。计数从启用时开始，不能补算历史访问。
+2. GitHub Discussions 已在本站仓库启用。为该仓库安装 [giscus GitHub App](https://github.com/apps/giscus)，然后将 `_config.yml` 的 `reader_comments.enabled` 改为 `true`。仓库与 Announcements 分类的标识已填好；评论按页面路径分别保存。
+
 ## 发布
 
 推送到 GitHub 后由 GitHub Pages 自动构建。提交前建议至少检查：首页、Learning、Publications、Teaching、Blog Posts 和 CV。

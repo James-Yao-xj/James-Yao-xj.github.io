@@ -19,6 +19,15 @@
 </div>
 {% endif %}
 
+<div class="footer-visit-stat" aria-live="polite">
+  <span>全站访问次数</span>
+  {% if site.visitor_stats.goatcounter_url %}
+    <strong id="site-visit-count" data-site="{{ site.visitor_stats.goatcounter_url | escape }}">—</strong>
+  {% else %}
+    <span class="footer-visit-stat__pending">统计尚未启用</span>
+  {% endif %}
+</div>
+
 <div class="page__footer-copyright">
   &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, <span>{{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }}</span> <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a><span>, a fork of</span> <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
   <span>Site last updated</span> {{ "now" | date: '%Y-%m-%d' }}

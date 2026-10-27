@@ -1,0 +1,13 @@
+<section class="reader-comments" aria-labelledby="reader-comments-title">
+  <h2 id="reader-comments-title">读者留言</h2>
+  {% if site.reader_comments.enabled %}
+    <p>欢迎就本页内容分享想法或提问。</p>
+    <div class="giscus"
+         data-repo="{{ site.reader_comments.repo }}"
+         data-repo-id="{{ site.reader_comments.repo_id }}"
+         data-category="{{ site.reader_comments.category }}"
+         data-category-id="{{ site.reader_comments.category_id }}"></div>
+  {% else %}
+    <p class="reader-comments__pending">留言区正在准备中。</p>
+  {% endif %}
+</section>
