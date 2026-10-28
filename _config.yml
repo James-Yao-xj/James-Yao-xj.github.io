@@ -77,17 +77,14 @@ exclude:
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
+  - docs
   - Gemfile
   - LICENSE
   - local
   - log
   - node_modules
-  - package.json*
+  - README.md
   - scripts
-  - README
   - tmp
   - vendor
 keep_files:

@@ -1,5 +1,6 @@
 /* Interface and introduction copy: zh-Hans, en, zh-Hant, fr, ar. */
 window.siteTranslations = [
+  // Shared navigation and site labels.
   [
     "研究与文章",
     "Publications",
@@ -189,6 +190,7 @@ window.siteTranslations = [
     "Dernière mise à jour",
     "آخر تحديث للموقع"
   ],
+  // Publications and teaching.
   [
     "期刊文章",
     "Journal Articles",
@@ -336,6 +338,7 @@ window.siteTranslations = [
     "Pékin, Chine",
     "بكين، الصين"
   ],
+  // Projects and blog posts.
   [
     "这里记录我的项目与实践。",
     "Here I share my projects and practical work.",
@@ -406,6 +409,7 @@ window.siteTranslations = [
     "Lire les notes de cours",
     "قراءة ملاحظات المقررات"
   ],
+  // Learning pages and course summaries.
   [
     "学习时留下的问题、推导与理解，整理在这里。可以从学校课程开始，也可以看看课外的自主学习专题。",
     "Questions, derivations, and insights from my studies, collected here. Start with university courses or explore topics I study on my own.",
@@ -756,6 +760,7 @@ window.siteTranslations = [
     "Source du CV en Typst",
     "مصدر السيرة الذاتية بصيغة Typst"
   ],
+  // CV labels and profile details.
   [
     "简历工具",
     "Resume tools",
@@ -1029,6 +1034,7 @@ window.siteTranslations = [
     "Cours de philosophie occidentale moderne, d’histoire de France, de chinois universitaire, d’histoire de la France absolutiste et de prise de parole en anglais.",
     "مقررات في الفلسفة الغربية الحديثة، وتاريخ فرنسا، واللغة الصينية الجامعية، وفرنسا في عهد الحكم المطلق، والخطابة باللغة الإنجليزية."
   ],
+  // Self-study lessons and shared chapter labels.
   [
     "第 {n} 讲：",
     "Lecture {n}: ",
@@ -1463,6 +1469,7 @@ window.siteTranslations = [
     "Articles par mot clé",
     "المقالات حسب الوسم"
   ],
+  // School note chapter titles.
   [
     "小班课第一讲",
     "Small group session 1",
@@ -1827,6 +1834,7 @@ window.siteTranslations = [
     "Entiers naturels et définitions récursives",
     "الأعداد الطبيعية والتعريفات العودية"
   ],
+  // Home page introductions and article descriptions.
   [
     "欢迎来到 James Yao 的个人主页！",
     "Welcome to James Yao's Website!",
@@ -2030,6 +2038,7 @@ window.siteTranslations = [
     "Kripke",
     "كريبكه"
   ],
+  // News page and news entries.
   [
     "生活动态",
     "News",
@@ -2142,6 +2151,7 @@ window.siteTranslations = [
     "← Retour aux actualités",
     "← العودة إلى جميع الأخبار"
   ],
+  // Visitor count and reader comments.
   [
     "全站访问次数",
     "Site visits",
