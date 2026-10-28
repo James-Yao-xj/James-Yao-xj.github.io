@@ -1,6 +1,6 @@
 {
   "repository": "https://github.com/James-Yao-xj/PKUcourseNote",
-  "revision": "c2690f0726863cc539e8a27c5a1ddc4f4342bd51",
+  "revision": "1119d68fc5155f350a76c024bcde8b1e044ae400",
   "courses": [
     {
       "slug": "ics",
@@ -141,6 +141,12 @@
           "title": "第 6 讲：树、森林与并查集",
           "source": "Semester3/DataStructureAlgorithm/Lesson6/Lesson6.typ",
           "url": "/learning/school-note/data-structures/lesson-6/"
+        },
+        {
+          "slug": "graph",
+          "title": "图：拓扑排序与最短路径",
+          "source": "Semester3/DataStructureAlgorithm/graph/graph.typ",
+          "url": "/learning/school-note/data-structures/graph/"
         },
         {
           "slug": "development-environment",

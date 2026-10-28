@@ -1625,6 +1625,13 @@ window.siteTranslations = [
     "بيئة التطوير وأساسيات المختبر"
   ],
   [
+    "图：拓扑排序与最短路径",
+    "Graphs: Topological Sorting and Shortest Paths",
+    "圖：拓撲排序與最短路徑",
+    "Graphes : tri topologique et plus courts chemins",
+    "الرسوم البيانية: الترتيب الطوبولوجي وأقصر المسارات"
+  ],
+  [
     "集合与基本运算",
     "Sets and Basic Operations",
     "集合與基本運算",

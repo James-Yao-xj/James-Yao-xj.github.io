@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 390" role="img" aria-labelledby="title description">
+  <title id="title">拓扑排序示例</title>
+  <desc id="description">A 指向 B 和 C；B 指向 D；C 指向 E；D 和 E 都指向 F。</desc>
+  <rect width="600" height="390" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0 0 9 4.5 0 9Z" fill="#35536d"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#35536d" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M284 57 175 128"/>
+    <path d="M316 57 425 128"/>
+    <path d="M160 160 160 225"/>
+    <path d="M440 160 440 225"/>
+    <path d="M175 257 284 328"/>
+    <path d="M425 257 316 328"/>
+  </g>
+  <g fill="#ffffff" stroke="#35536d" stroke-width="2.5">
+    <circle cx="300" cy="45" r="20"/>
+    <circle cx="160" cy="140" r="20"/>
+    <circle cx="440" cy="140" r="20"/>
+    <circle cx="160" cy="245" r="20"/>
+    <circle cx="440" cy="245" r="20"/>
+    <circle cx="300" cy="340" r="20"/>
+  </g>
+  <g fill="#172b3a" font-family="Arial, sans-serif" font-size="20" font-weight="600" text-anchor="middle" dominant-baseline="middle">
+    <text x="300" y="46">A</text>
+    <text x="160" y="141">B</text>
+    <text x="440" y="141">C</text>
+    <text x="160" y="246">D</text>
+    <text x="440" y="246">E</text>
+    <text x="300" y="341">F</text>
+  </g>
+</svg>

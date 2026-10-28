@@ -59,6 +59,7 @@ ICS_TITLES = {
 }
 SUPPLEMENTS = {
     ('data-structures', 'DevEnvironment'): ('development-environment', '开发环境与上机基础', 100),
+    ('data-structures', 'graph'): ('graph', '图：拓扑排序与最短路径', 7),
     ('discrete-mathematics', 'NumberTheory'): ('number-theory', '初等数论', 100),
     ('economics', 'Optimization'): ('optimization', '习题课：约束优化与 KKT', 100),
     # Keep these handwritten topics after Lesson4, as in the source main.typ.
@@ -177,6 +178,23 @@ def clean_html(document, image_assets):
     return result, ''.join(outline)
 
 
+def restore_graph_diagrams(content):
+    """Replace three diagrams that Typst drops during HTML export."""
+    diagrams = [
+        ('topological-order.svg', '有向无环图：A 指向 B、C，B 指向 D，C 指向 E，D 和 E 指向 F'),
+        ('depth-first-order.svg', '深度优先拓扑排序示例：A 分别指向 B 和 C，B 指向 D，C 指向 E'),
+        ('dijkstra-paths.svg', '带权有向图：从 S 经 B、C 到 D 的最短路径长度为 6'),
+    ]
+    marker = '<div></div>'
+    if content.count(marker) != len(diagrams):
+        raise ValueError('Graph diagrams changed in the Typst HTML export')
+    for filename, description in diagrams:
+        image = ('<figure class="note-diagram"><img src="{{ site.baseurl }}/assets/course-diagrams/'
+                 + filename + '" alt="' + description + '" loading="lazy"></figure>')
+        content = content.replace(marker, image, 1)
+    return content
+
+
 def compile_source(staging, source, output, image_assets):
     """Compile one source and return its HTML body and section outline."""
     wrapper = staging / '.export.typ'
@@ -187,7 +205,11 @@ def compile_source(staging, source, output, image_assets):
     with (SITE / 'local/course-note-export.log').open('a', encoding='utf-8') as stream:
         stream.write(source + '\n' + result.stderr + '\n')
     result.check_returncode()
-    return clean_html(output.read_text(), image_assets)
+    content, outline = clean_html(output.read_text(), image_assets)
+    # Typst 0.15 omits positioned diagram content in this source file.
+    if source == 'Semester3/DataStructureAlgorithm/graph/graph.typ':
+        content = restore_graph_diagrams(content)
+    return content, outline
 
 
 def link_slide_map(content, catalog, aliases):
