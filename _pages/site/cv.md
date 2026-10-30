@@ -40,6 +40,32 @@ redirect_from:
         </div>
       </section>
 
+      <section class="resume-section resume-transcript" aria-labelledby="en-transcript">
+        <h2 id="en-transcript">Academic transcript</h2>
+        {% for semester in site.data.cv_transcript %}
+        <div class="resume-transcript__term">
+          <h3>{{ semester.term }}</h3>
+          <div class="resume-transcript__scroll" role="region" aria-label="{{ semester.term }}" tabindex="0">
+            <table>
+              <thead>
+                <tr><th scope="col">Course</th><th scope="col">Category</th><th scope="col">Credits</th><th scope="col">Grade</th></tr>
+              </thead>
+              <tbody>
+                {% for course in semester.courses %}
+                <tr>
+                  <th scope="row" data-original-language><span lang="zh-Hans">{{ course.zh | escape }}</span><small lang="en">{{ course.en | escape }}</small></th>
+                  <td>{{ course.category }}</td>
+                  <td>{{ course.credits }}</td>
+                  <td>{{ course.grade }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        {% endfor %}
+      </section>
+
       <section class="resume-section" aria-labelledby="en-projects">
         <h2 id="en-projects">Selected Projects</h2>
         <div class="resume-entry">

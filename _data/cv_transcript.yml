@@ -1,0 +1,129 @@
+# Courses appear in the same order as the supplied transcript.
+- term: "2025–2026 academic year · Term 3"
+  courses:
+    - zh: "速成法语（零起点）"
+      en: "French for Reading from scratch"
+      category: "University elective"
+      credits: 2
+      grade: "88"
+    - zh: "人工智能前沿"
+      en: "Frontiers of Artificial Intelligence"
+      category: "Elective"
+      credits: 1
+      grade: "合格"
+    - zh: "智能飞行系统：项目驱动式从设计到实践"
+      en: "Intelligent Flight Systems: Project-Driven from Design to Practice"
+      category: "University elective"
+      credits: 1
+      grade: "合格"
+
+- term: "2025–2026 academic year · Term 2"
+  courses:
+    - zh: "高等代数 (II )"
+      en: "Advanced Algebra (II)"
+      category: "Major required"
+      credits: 4
+      grade: "73"
+    - zh: "高等数学A（二）"
+      en: "Advanced Mathematics A (no. 2)"
+      category: "Major required"
+      credits: 5
+      grade: "72"
+    - zh: "大学国文"
+      en: "University-level Chinese"
+      category: "General education"
+      credits: 2
+      grade: "90"
+    - zh: "现代西方哲学"
+      en: "Modern Western Philosophy"
+      category: "General education"
+      credits: 2
+      grade: "81"
+    - zh: "英语公众演讲"
+      en: "English Public Speaking"
+      category: "University required"
+      credits: 2
+      grade: "94"
+    - zh: "中国近现代史纲要"
+      en: "Outline of Chinese Modern History"
+      category: "University required"
+      credits: 3
+      grade: "87"
+    - zh: "习近平新时代中国特色社会主义思想概论"
+      en: "Introduction to Xi Jinping Thought on Socialism with Chinese Characteristics for a New Era"
+      category: "University required"
+      credits: 3
+      grade: "92"
+    - zh: "网球"
+      en: "Tennis"
+      category: "University required"
+      credits: 1
+      grade: "98"
+    - zh: "程序设计实习(实验班)"
+      en: "Practice of Programming in C&C++(Honor Track)"
+      category: "Major required"
+      credits: 3
+      grade: "80"
+    - zh: "人工智能基础"
+      en: "Fundamentals of Artificial Intelligence"
+      category: "Major required"
+      credits: 3
+      grade: "89"
+    - zh: "思想政治实践（下）"
+      en: "Social practice and service learning, Part II"
+      category: "University required"
+      credits: 1
+      grade: "IP"
+
+- term: "2025–2026 academic year · Term 1"
+  courses:
+    - zh: "高等数学A（一）"
+      en: "Advanced Mathematics A (no. 1)"
+      category: "Major required"
+      credits: 5
+      grade: "85"
+    - zh: "线性代数A (I)"
+      en: "Linear Algebra A (I)"
+      category: "Major required"
+      credits: 4
+      grade: "79"
+    - zh: "力学"
+      en: "Mechanics"
+      category: "Major required"
+      credits: 3
+      grade: "78"
+    - zh: "法国史"
+      en: "History of France"
+      category: "University elective"
+      credits: 2
+      grade: "88"
+    - zh: "跨文化交际"
+      en: "Intercultural Communication"
+      category: "University required"
+      credits: 2
+      grade: "90"
+    - zh: "思想道德与法治"
+      en: "Ideology, morality and Law"
+      category: "University required"
+      credits: 3
+      grade: "80"
+    - zh: "信息科学技术概论"
+      en: "Introduction to Information Science and Technique"
+      category: "Major required"
+      credits: 1
+      grade: "合格"
+    - zh: "计算概论A"
+      en: "Introduction to Computation (A)"
+      category: "Major required"
+      credits: 3
+      grade: "88"
+    - zh: "军事理论"
+      en: "Military Theory"
+      category: "University required"
+      credits: 2
+      grade: "89"
+    - zh: "思想政治实践（上）"
+      en: "Social practice and service learning, Part I"
+      category: "University required"
+      credits: 1
+      grade: "IP"

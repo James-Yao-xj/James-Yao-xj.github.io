@@ -762,6 +762,104 @@ window.siteTranslations = [
   ],
   // CV labels and profile details.
   [
+    "成绩单",
+    "Academic transcript",
+    "成績單",
+    "Relevé de notes",
+    "السجل الأكاديمي"
+  ],
+  [
+    "2025–2026 学年度 · 第 3 学期",
+    "2025–2026 academic year · Term 3",
+    "2025–2026 學年度 · 第 3 學期",
+    "Année universitaire 2025–2026 · 3e semestre",
+    "العام الدراسي 2025–2026 · الفصل الثالث"
+  ],
+  [
+    "2025–2026 学年度 · 第 2 学期",
+    "2025–2026 academic year · Term 2",
+    "2025–2026 學年度 · 第 2 學期",
+    "Année universitaire 2025–2026 · 2e semestre",
+    "العام الدراسي 2025–2026 · الفصل الثاني"
+  ],
+  [
+    "2025–2026 学年度 · 第 1 学期",
+    "2025–2026 academic year · Term 1",
+    "2025–2026 學年度 · 第 1 學期",
+    "Année universitaire 2025–2026 · 1er semestre",
+    "العام الدراسي 2025–2026 · الفصل الأول"
+  ],
+  [
+    "课程",
+    "Course",
+    "課程",
+    "Cours",
+    "المقرر"
+  ],
+  [
+    "课程类别",
+    "Category",
+    "課程類別",
+    "Catégorie",
+    "فئة المقرر"
+  ],
+  [
+    "学分",
+    "Credits",
+    "學分",
+    "Crédits",
+    "الساعات المعتمدة"
+  ],
+  [
+    "成绩",
+    "Grade",
+    "成績",
+    "Note",
+    "الدرجة"
+  ],
+  [
+    "专业必修",
+    "Major required",
+    "專業必修",
+    "Obligatoire de spécialité",
+    "إلزامي للتخصص"
+  ],
+  [
+    "全校必修",
+    "University required",
+    "全校必修",
+    "Obligatoire de l’université",
+    "إلزامي للجامعة"
+  ],
+  [
+    "全校任选",
+    "University elective",
+    "全校任選",
+    "Optionnel de l’université",
+    "اختياري على مستوى الجامعة"
+  ],
+  [
+    "任选",
+    "Elective",
+    "任選",
+    "Optionnel",
+    "اختياري"
+  ],
+  [
+    "通选课",
+    "General education",
+    "通選課",
+    "Enseignement général",
+    "متطلبات التعليم العام"
+  ],
+  [
+    "合格",
+    "Pass",
+    "合格",
+    "Validé",
+    "ناجح"
+  ],
+  [
     "简历工具",
     "Resume tools",
     "履歷工具",

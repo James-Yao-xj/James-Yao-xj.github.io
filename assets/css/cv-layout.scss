@@ -261,6 +261,79 @@ body {
   color: var(--color-cv-blue);
 }
 
+.resume-transcript__term + .resume-transcript__term {
+  margin-top: var(--space-cv-4);
+}
+
+.resume-transcript__term h3 {
+  margin: 0 0 var(--space-cv-2);
+  color: var(--color-cv-ink);
+  font-size: var(--text-cv-base);
+  font-weight: 700;
+}
+
+.resume-transcript__scroll {
+  overflow-x: auto;
+  border: var(--rule-cv-hairline) solid var(--color-cv-rule);
+}
+
+.resume-transcript__scroll:focus-visible {
+  outline: var(--rule-cv-hairline) solid var(--color-cv-focus);
+  outline-offset: var(--space-cv-1);
+}
+
+.resume-transcript table {
+  width: 100%;
+  min-width: 40rem;
+  border-collapse: collapse;
+  font-family: var(--font-cv-body);
+  font-size: var(--text-cv-sm);
+}
+
+.resume-transcript th,
+.resume-transcript td {
+  padding: var(--space-cv-2) var(--space-cv-3);
+  border-bottom: var(--rule-cv-hairline) solid var(--color-cv-rule);
+  text-align: start;
+  vertical-align: top;
+}
+
+.resume-transcript tbody tr:last-child th,
+.resume-transcript tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.resume-transcript thead {
+  color: var(--color-cv-navy);
+  background: var(--color-cv-control);
+}
+
+.resume-transcript tbody th {
+  width: 58%;
+  color: var(--color-cv-ink);
+  font-weight: 600;
+}
+
+.resume-transcript tbody th span,
+.resume-transcript tbody th small {
+  display: block;
+  direction: ltr;
+  text-align: start;
+}
+
+.resume-transcript tbody th small {
+  margin-top: var(--space-cv-1);
+  color: var(--color-cv-muted);
+  font-size: var(--text-cv-xs);
+  font-weight: 400;
+}
+
+.resume-transcript th:nth-child(n + 3),
+.resume-transcript td:nth-child(n + 3) {
+  text-align: center;
+  white-space: nowrap;
+}
+
 .award-list {
   margin: 0;
 }
@@ -424,6 +497,32 @@ body {
 
   .resume-section ul {
     margin-top: var(--space-cv-1);
+  }
+
+  .resume-transcript {
+    break-inside: auto;
+  }
+
+  .resume-transcript__term {
+    break-inside: auto;
+  }
+
+  .resume-transcript__scroll {
+    overflow: visible;
+  }
+
+  .resume-transcript table {
+    min-width: 0;
+    font-size: 8pt;
+  }
+
+  .resume-transcript th,
+  .resume-transcript td {
+    padding: 1.5mm 2mm;
+  }
+
+  .resume-transcript tr {
+    break-inside: avoid;
   }
 }
 
