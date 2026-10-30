@@ -1,6 +1,6 @@
 {
   "repository": "https://github.com/James-Yao-xj/PKUcourseNote",
-  "revision": "1119d68fc5155f350a76c024bcde8b1e044ae400",
+  "revision": "9b49d2ea35f3b29f43777e8b968d531b6839acd1",
   "courses": [
     {
       "slug": "ics",
@@ -253,6 +253,12 @@
           "title": "第 9 讲：多维高斯分布与协方差矩阵",
           "source": "Semester3/ProbabilityTheoryAndStatistics/Lesson9.typ",
           "url": "/learning/school-note/probability/lesson-9/"
+        },
+        {
+          "slug": "course-summary",
+          "title": "课程综合笔记：知识点梳理与基本公式推导",
+          "source": "Semester3/ProbabilityTheoryAndStatistics/CourseSummary.typ",
+          "url": "/learning/school-note/probability/course-summary/"
         }
       ]
     },

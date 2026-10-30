@@ -58,6 +58,7 @@ ICS_TITLES = {
     'ICS_知识重点总结': ('summary', 'ICS 知识重点总结'),
 }
 SUPPLEMENTS = {
+    ('probability', 'CourseSummary'): ('course-summary', '课程综合笔记：知识点梳理与基本公式推导', 100),
     ('data-structures', 'DevEnvironment'): ('development-environment', '开发环境与上机基础', 100),
     ('data-structures', 'graph'): ('graph', '图：拓扑排序与最短路径', 7),
     ('discrete-mathematics', 'NumberTheory'): ('number-theory', '初等数论', 100),

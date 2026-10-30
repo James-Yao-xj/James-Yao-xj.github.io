@@ -1828,6 +1828,13 @@ window.siteTranslations = [
     "توزيعات غاوس متعددة الأبعاد ومصفوفات التغاير"
   ],
   [
+    "课程综合笔记：知识点梳理与基本公式推导",
+    "Course summary: concepts and key formula derivations",
+    "課程綜合筆記：知識點梳理與基本公式推導",
+    "Synthèse du cours : notions et démonstrations des formules essentielles",
+    "ملخص المقرر: المفاهيم واشتقاق الصيغ الأساسية"
+  ],
+  [
     "经济学的思维方式",
     "Thinking Like an Economist",
     "經濟學的思維方式",
