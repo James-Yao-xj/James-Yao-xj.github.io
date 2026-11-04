@@ -1934,6 +1934,97 @@ window.siteTranslations = [
     "يرى البحث أن أقلية فقط شاركت في المقاومة المسلحة، بينما دعمتها فئة أوسع بوسائل غير عنيفة أو عارضت سياسات محددة للنازيين وفيشي، ولا سيما السياسات ضد اليهود. أما الأغلبية فبقيت سلبية أو تعاونت. ويبيّن تصنيف من خمس درجات أن المقاومة لا تُقاس بالسلاح وحده، بل بالخيارات الأخلاقية والممارسات اليومية أيضاً."
   ],
   [
+    "这里整理我讲授和辅导的课程。选择课程可查看内容与资料，也可以直接打开讲义。",
+    "Courses I teach and tutor. Open a course for details and resources, or go straight to its handout.",
+    "這裡整理我講授和輔導的課程。選擇課程可查看內容與資料，也可以直接開啟講義。",
+    "Voici les cours que j’enseigne et accompagne. Ouvrez un cours pour consulter son contenu et ses ressources, ou accédez directement au support.",
+    "هنا المقررات التي أدرّسها أو أقدّم فيها الدعم. افتح المقرر للاطلاع على محتواه ومواده أو انتقل مباشرة إلى الملزمة."
+  ],
+  [
+    "查看课程",
+    "View course",
+    "查看課程",
+    "Voir le cours",
+    "عرض المقرر"
+  ],
+  [
+    "查看仓库",
+    "View repository",
+    "查看儲存庫",
+    "Voir le dépôt",
+    "عرض المستودع"
+  ],
+  [
+    "讲义 PDF",
+    "Handout PDF",
+    "講義 PDF",
+    "Support PDF",
+    "الملزمة PDF"
+  ],
+  [
+    "解析 PDF",
+    "Solutions PDF",
+    "解析 PDF",
+    "Corrigé PDF",
+    "الحلول PDF"
+  ],
+  [
+    "前三章课堂讲义",
+    "Class handout: chapters 1–3",
+    "前三章課堂講義",
+    "Support de cours : chapitres 1 à 3",
+    "ملزمة الفصول الثلاثة الأولى"
+  ],
+  [
+    "函数、极限与连续；微商与微分；微分中值定理及其应用。",
+    "Functions, limits and continuity; derivatives and differentials; the mean value theorem and its applications.",
+    "函數、極限與連續；微商與微分；微分中值定理及其應用。",
+    "Fonctions, limites et continuité ; dérivées et différentielles ; théorème des accroissements finis et applications.",
+    "الدوال والنهايات والاستمرارية؛ المشتقات والتفاضل؛ نظرية القيمة المتوسطة وتطبيقاتها."
+  ],
+  [
+    "前三章配套解析",
+    "Worked solutions: chapters 1–3",
+    "前三章配套解析",
+    "Corrigé : chapitres 1 à 3",
+    "حلول الفصول الثلاثة الأولى"
+  ],
+  [
+    "按题号整理课堂例题与课后习题的解答。",
+    "Solutions to the class examples and exercises, organized by question number.",
+    "依題號整理課堂例題與課後習題的解答。",
+    "Solutions des exemples et exercices, classées par numéro de question.",
+    "حلول أمثلة الدرس والتمارين مرتبة حسب أرقام الأسئلة."
+  ],
+  [
+    "课程仓库与 Typst 源文件",
+    "Course repository and Typst sources",
+    "課程儲存庫與 Typst 原始檔",
+    "Dépôt du cours et sources Typst",
+    "مستودع المقرر وملفات Typst"
+  ],
+  [
+    "查看可编辑的讲义和解析源文件。",
+    "View the editable handout and solutions source files.",
+    "查看可編輯的講義和解析原始檔。",
+    "Consulter les sources modifiables du support et du corrigé.",
+    "عرض الملفات القابلة للتحرير للملزمة والحلول."
+  ],
+  [
+    "← 返回教学页面",
+    "← Back to Teaching",
+    "← 返回教學頁面",
+    "← Retour à l’enseignement",
+    "← العودة إلى صفحة التدريس"
+  ],
+  [
+    "面向高中生的数学家庭辅导，提供基础知识讲义。",
+    "Home mathematics tutoring for high school students, with a handout on core concepts.",
+    "面向高中生的數學家庭輔導，提供基礎知識講義。",
+    "Cours particulier de mathématiques pour lycéens, avec un support sur les notions fondamentales.",
+    "دروس رياضيات منزلية لطلاب الثانوية مع ملزمة للمفاهيم الأساسية."
+  ],
+  [
     "高等数学 C 小班课",
     "Advanced Mathematics C Tutorial",
     "高等數學 C 小班課",

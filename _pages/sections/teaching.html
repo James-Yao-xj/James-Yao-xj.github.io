@@ -5,8 +5,21 @@ permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
+<p class="section-intro">这里整理我讲授和辅导的课程。选择课程可查看内容与资料，也可以直接打开讲义。</p>
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="teaching-list">
+  {% assign courses = site.teaching | sort: 'date' | reverse %}
+  {% for course in courses %}
+  <article class="teaching-card">
+    <p class="teaching-card__meta">{{ course.type }} · {{ course.venue }} · {{ course.date | date: '%Y' }}</p>
+    <h2><a href="{{ course.url | relative_url }}">{{ course.title }}</a></h2>
+    <p>{{ course.excerpt | strip_html }}</p>
+    <div class="teaching-card__links">
+      <a href="{{ course.url | relative_url }}">查看课程</a>
+      {% for material in course.materials limit:2 %}
+      <a href="{{ material.url }}">{{ material.short_label }} <span aria-hidden="true">↗</span></a>
+      {% endfor %}
+    </div>
+  </article>
+  {% endfor %}
+</div>
