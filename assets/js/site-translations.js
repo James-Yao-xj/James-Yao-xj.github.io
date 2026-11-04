@@ -1934,6 +1934,69 @@ window.siteTranslations = [
     "يرى البحث أن أقلية فقط شاركت في المقاومة المسلحة، بينما دعمتها فئة أوسع بوسائل غير عنيفة أو عارضت سياسات محددة للنازيين وفيشي، ولا سيما السياسات ضد اليهود. أما الأغلبية فبقيت سلبية أو تعاونت. ويبيّن تصنيف من خمس درجات أن المقاومة لا تُقاس بالسلاح وحده، بل بالخيارات الأخلاقية والممارسات اليومية أيضاً."
   ],
   [
+    "高等数学 C 小班课",
+    "Advanced Mathematics C Tutorial",
+    "高等數學 C 小班課",
+    "Travaux dirigés de mathématiques avancées C",
+    "دروس الرياضيات المتقدمة C في مجموعة صغيرة"
+  ],
+  [
+    "小班课",
+    "Small-group tutorial",
+    "小班課",
+    "Travaux dirigés en petit groupe",
+    "درس لمجموعة صغيرة"
+  ],
+  [
+    "北京大学政府管理学院",
+    "School of Government, Peking University",
+    "北京大學政府管理學院",
+    "École de gouvernement de l’Université de Pékin",
+    "كلية الإدارة الحكومية بجامعة بكين"
+  ],
+  [
+    "面向北京大学政府管理学院的高等数学 C 小班课，提供前三章讲义与配套解析。",
+    "An Advanced Mathematics C tutorial for Peking University's School of Government, with handouts and worked solutions for the first three chapters.",
+    "面向北京大學政府管理學院的高等數學 C 小班課，提供前三章講義與配套解析。",
+    "Des travaux dirigés de mathématiques avancées C pour l’École de gouvernement de l’Université de Pékin, avec des supports et leurs corrigés pour les trois premiers chapitres.",
+    "دروس الرياضيات المتقدمة C لكلية الإدارة الحكومية بجامعة بكين، مع ملخصات وحلول مشروحة للفصول الثلاثة الأولى."
+  ],
+  [
+    "这门小班课围绕函数、极限与连续，导数与微分，以及微分中值定理及其应用展开。讲义收录 55 道课堂真题例题和 12 道课后习题；配套解析按原题号整理，方便课后复习。",
+    "The tutorial covers functions, limits and continuity; derivatives and differentials; and the mean value theorem and its applications. The handout contains 55 past exam examples and 12 exercises, with a separate set of worked solutions organized by question number.",
+    "這門小班課圍繞函數、極限與連續，導數與微分，以及微分中值定理及其應用展開。講義收錄 55 道課堂真題例題和 12 道課後習題；配套解析按原題號整理，方便課後複習。",
+    "Le cours couvre les fonctions, les limites et la continuité, les dérivées et les différentielles, ainsi que le théorème des accroissements finis et ses applications. Le support comprend 55 exemples tirés d’anciens examens et 12 exercices, accompagnés d’un corrigé classé par numéro de question.",
+    "تغطي الدروس الدوال والنهايات والاستمرارية، والمشتقات والتفاضل، ونظرية القيمة المتوسطة وتطبيقاتها. تضم الملزمة 55 مثالاً من اختبارات سابقة و12 تمريناً، مع حلول منفصلة مرتبة حسب أرقام الأسئلة."
+  ],
+  [
+    "课程资料",
+    "Course materials",
+    "課程資料",
+    "Supports de cours",
+    "مواد المقرر"
+  ],
+  [
+    "课堂讲义 PDF",
+    "Class handout PDF",
+    "課堂講義 PDF",
+    "Support de cours PDF",
+    "ملزمة الدرس PDF"
+  ],
+  [
+    "配套解析 PDF",
+    "Worked solutions PDF",
+    "配套解析 PDF",
+    "Corrigé PDF",
+    "الحلول المشروحة PDF"
+  ],
+  [
+    "Typst 源文件与课程仓库",
+    "Typst sources and course repository",
+    "Typst 原始檔與課程儲存庫",
+    "Sources Typst et dépôt du cours",
+    "ملفات Typst ومستودع المقرر"
+  ],
+  [
     "这是一门面向高中生的家庭辅导课程，涵盖学生需要掌握的基础知识。你可以访问",
     "This is a home tutoring course for high school student.\nThis course includes the basic knowledge a student should understand. You can visit ",
     "這是一門面向高中生的家庭輔導課程，涵蓋學生需要掌握的基礎知識。你可以造訪",
