@@ -318,20 +318,6 @@ window.siteTranslations = [
     "يتناول هذا البحث إمكانية نقل مئة ألف شخص من الأرض إلى القمر."
   ],
   [
-    "家庭辅导",
-    "Home Tutoring",
-    "家庭輔導",
-    "Cours particuliers",
-    "دروس خصوصية"
-  ],
-  [
-    "高中数学课程",
-    "High School math Course",
-    "高中數學課程",
-    "Mathématiques au lycée",
-    "مقرر الرياضيات للمرحلة الثانوية"
-  ],
-  [
     "中国北京",
     "Peking, China",
     "中國北京",
@@ -1442,13 +1428,6 @@ window.siteTranslations = [
     ". يعرّف هذا الدرس بمحاور المقابلات، وتأتي التدريبات المفصلة بعد اختيار المسار."
   ],
   [
-    "高中数学课程，",
-    "High School math Course,",
-    "高中數學課程，",
-    "Mathématiques au lycée,",
-    "مقرر الرياضيات للمرحلة الثانوية،"
-  ],
-  [
     "分享到",
     "Share on",
     "分享至",
@@ -2018,13 +1997,6 @@ window.siteTranslations = [
     "← العودة إلى صفحة التدريس"
   ],
   [
-    "面向高中生的数学家庭辅导，提供基础知识讲义。",
-    "Home mathematics tutoring for high school students, with a handout on core concepts.",
-    "面向高中生的數學家庭輔導，提供基礎知識講義。",
-    "Cours particulier de mathématiques pour lycéens, avec un support sur les notions fondamentales.",
-    "دروس رياضيات منزلية لطلاب الثانوية مع ملزمة للمفاهيم الأساسية."
-  ],
-  [
     "高等数学 C 小班课",
     "Advanced Mathematics C Tutorial",
     "高等數學 C 小班課",
@@ -2086,27 +2058,6 @@ window.siteTranslations = [
     "Typst 原始檔與課程儲存庫",
     "Sources Typst et dépôt du cours",
     "ملفات Typst ومستودع المقرر"
-  ],
-  [
-    "这是一门面向高中生的家庭辅导课程，涵盖学生需要掌握的基础知识。你可以访问",
-    "This is a home tutoring course for high school student.\nThis course includes the basic knowledge a student should understand. You can visit ",
-    "這是一門面向高中生的家庭輔導課程，涵蓋學生需要掌握的基礎知識。你可以造訪",
-    "Ce cours particulier de mathématiques s’adresse aux lycéens et couvre les notions fondamentales à maîtriser. Vous pouvez consulter ",
-    "هذه دروس خصوصية لطلاب المرحلة الثانوية، تغطي المعارف الأساسية التي يحتاجون إليها. يمكنكم زيارة "
-  ],
-  [
-    "课程仓库",
-    "this page",
-    "課程儲存庫",
-    "le dépôt du cours",
-    "مستودع المقرر"
-  ],
-  [
-    "获取讲义。讲义使用 Typst 编写，可能需要下载相关字体，以获得最佳阅读效果。",
-    " to get the handout. \nThe handout was built with typst, you may have to download some fonts to get the best viewing experience.",
-    "取得講義。講義使用 Typst 編寫，可能需要下載相關字型，以獲得最佳閱讀效果。",
-    " pour obtenir le support. Il est composé avec Typst ; certaines polices devront peut-être être installées pour un rendu optimal.",
-    " للحصول على الملزمة. أُعدّت باستخدام Typst، وقد تحتاجون إلى تنزيل بعض الخطوط للحصول على أفضل عرض."
   ],
   [
     "维希政府以法国中部的一座城镇命名，却放弃了对纳粹德国的抵抗并与之合作，提供了大量资源。与此同时，在占领区和维希法国境内，一些组织仍然坚持抵抗。本文试图回答：1940 至 1945 年，法国民众在多大程度上抵抗德国占领与维希政权？我们又该如何理解抵抗与不抵抗的不同层次？ 本文认为，参与武装抵抗的法国人虽然只占少数，但更广泛的群体以非暴力方式支持抵抗者，或反对纳粹与维希的特定政策，尤其是针对犹太人的政策；而大多数人保持消极，甚至选择合作。文章采用五级分类，说明衡量抵抗不能只看武器，也要看道德选择与日常行动。",
