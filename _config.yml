@@ -116,9 +116,6 @@ collections:
   news:
     output: true
     permalink: /news/:name/
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
@@ -150,15 +147,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: false
   # _publications
   - scope:
       path: ""
